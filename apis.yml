@@ -1,0 +1,42 @@
+aid: asyncapi
+name: AsyncAPI
+description: >-
+  AsyncAPI is a Linux Foundation project that improves the state of event-driven architectures by providing specifications and tooling for defining asynchronous APIs. It enables developers to document, generate code, and manage message-driven APIs across protocols like Kafka, MQTT, WebSocket, and AMQP.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Event-Driven
+  - Messaging
+  - Standards
+  - Linux Foundation
+created: '2026-03-16'
+modified: '2026-03-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/asyncapi/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: asyncapi:asyncapi-api
+    name: AsyncAPI API
+    description: >-
+      API for accessing AsyncAPI specifications, tooling, and resources for defining and managing asynchronous and event-driven APIs across messaging protocols.
+    humanURL: https://www.asyncapi.com/docs
+    tags:
+      - Event-Driven
+      - Messaging
+    properties:
+      - type: Documentation
+        url: https://www.asyncapi.com/docs
+common:
+  - type: Documentation
+    name: AsyncAPI Documentation
+    description: Official documentation for AsyncAPI.
+    url: https://www.asyncapi.com/docs
+  - type: GitHubOrg
+    name: AsyncAPI GitHub
+    description: Source code and repositories for AsyncAPI.
+    url: https://github.com/asyncapi
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
