@@ -4,10 +4,10 @@
     {
       "source": "https://www.asyncapi.com/blog",
       "feed_url": "https://www.asyncapi.com/rss.xml",
-      "saved": 10,
-      "title": "AsyncAPI Initiative Blog RSS Feed"
+      "title": "AsyncAPI Initiative Blog RSS Feed",
+      "saved": 0
     }
   ],
   "post_count": 10,
-  "fetched": "2026-05-03T23:22:45Z"
+  "fetched": "2026-05-09T20:17:51Z"
 }
