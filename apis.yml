@@ -44,6 +44,8 @@ apis:
       - type: AsyncAPI
         url: https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/asyncapi
   - type: Portal
     url: https://www.asyncapi.com/
     title: AsyncAPI Website
