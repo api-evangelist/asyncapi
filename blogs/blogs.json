@@ -2,12 +2,20 @@
   "repo": "asyncapi",
   "feeds": [
     {
-      "source": "https://www.asyncapi.com/blog",
+      "source": "https://www.asyncapi.com/rss.xml",
       "feed_url": "https://www.asyncapi.com/rss.xml",
-      "title": "AsyncAPI Initiative Blog RSS Feed",
-      "saved": 42
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://github.com/asyncapi",
+      "feed_url": "https://github.com/asyncapi",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "post_count": 52,
-  "fetched": "2026-05-17T20:20:35Z"
+  "post_count": 53,
+  "fetched": "2026-06-01T23:35:02Z"
 }
