@@ -1,0 +1,167 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AsyncAPI Server API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Validate",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Validate an AsyncAPI document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/validate",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Validate an AsyncAPI document"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Parse",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Parse an AsyncAPI document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/parse",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Parse an AsyncAPI document"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Convert",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Convert an AsyncAPI document to another version or format",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/convert",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Convert an AsyncAPI document to another version or format"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Generate",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Generate code or documentation from an AsyncAPI document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/generate",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Generate code or documentation from an AsyncAPI document"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Bundle",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Bundle multiple AsyncAPI documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/bundle",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Bundle multiple AsyncAPI documents"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Diff",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Diff two AsyncAPI documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/diff",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Diff two AsyncAPI documents"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Help",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve command and endpoint help",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost/help"
+          },
+          "docs": "Retrieve command and endpoint help"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
