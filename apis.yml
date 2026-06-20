@@ -9,7 +9,7 @@ description: >-
   The AsyncAPI specification serves as the industry standard for describing
   asynchronous messaging interfaces, similar to how OpenAPI serves REST APIs.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Event-Driven
   - Linux Foundation
