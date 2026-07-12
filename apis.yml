@@ -44,6 +44,8 @@ apis:
       - type: AsyncAPI
         url: https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md
 common:
+  - type: DomainSecurity
+    url: security/asyncapi-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/asyncapi
   - type: Portal
