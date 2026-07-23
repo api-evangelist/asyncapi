@@ -1,0 +1,91 @@
+openapi: 3.1.0
+info:
+  title: AsyncAPI Server Bundle Diff API
+  version: '1.0'
+  description: 'The AsyncAPI Server API exposes the official AsyncAPI tooling
+
+    (validation, parsing, conversion, code generation, bundling, diffing)
+
+    over HTTP. It is open source under the AsyncAPI Initiative (now part of
+
+    the AsyncAPI CLI repository) and can be self-hosted via Docker.
+
+
+    Note: The AsyncAPI specification itself is a documentation/specification
+
+    standard, not an API. This document covers the companion AsyncAPI Server
+
+    API which provides the runtime HTTP surface.
+
+    '
+  contact:
+    name: AsyncAPI Initiative
+    url: https://www.asyncapi.com
+  license:
+    name: Apache-2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+servers:
+- url: http://localhost
+  description: Self-hosted AsyncAPI Server API
+tags:
+- name: Diff
+paths:
+  /diff:
+    post:
+      tags:
+      - Diff
+      summary: Diff two AsyncAPI documents
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - asyncapis
+              properties:
+                asyncapis:
+                  type: array
+                  minItems: 2
+                  maxItems: 2
+                  items:
+                    oneOf:
+                    - type: object
+                    - type: string
+      responses:
+        '200':
+          description: Diff result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  diff:
+                    oneOf:
+                    - type: object
+                    - type: string
+        '422':
+          $ref: '#/components/responses/Problem'
+components:
+  schemas:
+    Problem:
+      type: object
+      properties:
+        type:
+          type: string
+          format: uri
+        title:
+          type: string
+        status:
+          type: integer
+        detail:
+          type: string
+        instance:
+          type: string
+  responses:
+    Problem:
+      description: RFC 7807 problem response
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'

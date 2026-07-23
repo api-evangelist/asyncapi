@@ -1,0 +1,40 @@
+openapi: 3.1.0
+info:
+  title: AsyncAPI Server Bundle Help API
+  version: '1.0'
+  description: 'The AsyncAPI Server API exposes the official AsyncAPI tooling
+
+    (validation, parsing, conversion, code generation, bundling, diffing)
+
+    over HTTP. It is open source under the AsyncAPI Initiative (now part of
+
+    the AsyncAPI CLI repository) and can be self-hosted via Docker.
+
+
+    Note: The AsyncAPI specification itself is a documentation/specification
+
+    standard, not an API. This document covers the companion AsyncAPI Server
+
+    API which provides the runtime HTTP surface.
+
+    '
+  contact:
+    name: AsyncAPI Initiative
+    url: https://www.asyncapi.com
+  license:
+    name: Apache-2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+servers:
+- url: http://localhost
+  description: Self-hosted AsyncAPI Server API
+tags:
+- name: Help
+paths:
+  /help:
+    get:
+      tags:
+      - Help
+      summary: Retrieve command and endpoint help
+      responses:
+        '200':
+          description: Help payload
