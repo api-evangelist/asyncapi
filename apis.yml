@@ -9,7 +9,19 @@ description: >-
   The AsyncAPI specification serves as the industry standard for describing
   asynchronous messaging interfaces, similar to how OpenAPI serves REST APIs.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/asyncapi.png
 tags:
   - Event-Driven
   - Linux Foundation
@@ -22,27 +34,89 @@ created: '2026-03-16'
 modified: '2026-04-19'
 specificationVersion: '0.19'
 apis:
-  - aid: asyncapi:asyncapi-spec
-    name: AsyncAPI Specification
-    description: >-
-      The AsyncAPI Specification is an open standard for describing asynchronous
-      and event-driven APIs. It provides a machine-readable format for defining
-      messaging interfaces across protocols like Kafka, MQTT, WebSocket, and
-      AMQP, enabling documentation generation, code generation, and validation
-      tooling for event-driven architectures.
-    humanURL: https://www.asyncapi.com/docs
-    tags:
-      - Event-Driven
-      - Messaging
-      - Specification
-      - Standards
-    properties:
-      - type: Documentation
-        url: https://www.asyncapi.com/docs
-      - type: GettingStarted
-        url: https://www.asyncapi.com/docs/tutorials/getting-started
-      - type: AsyncAPI
-        url: https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md
+- aid: asyncapi:asyncapi-spec
+  name: AsyncAPI Specification
+  description: >-
+    The AsyncAPI Specification is an open standard for describing asynchronous and event-driven APIs.
+    It provides a machine-readable format for defining messaging interfaces across protocols like Kafka,
+    MQTT, WebSocket, and AMQP, enabling documentation generation, code generation, and validation tooling
+    for event-driven architectures.
+  humanURL: https://www.asyncapi.com/docs
+  tags:
+  - Event-Driven
+  - Messaging
+  - Specification
+  - Standards
+  properties:
+  - type: Documentation
+    url: https://www.asyncapi.com/docs
+  - type: GettingStarted
+    url: https://www.asyncapi.com/docs/tutorials/getting-started
+  - type: AsyncAPI
+    url: https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md
+- aid: asyncapi:asyncapi-bundle-api
+  name: AsyncAPI Bundle API
+  description: The Bundle API from AsyncAPI — 1 operation(s) for bundle.
+  humanURL: https://www.asyncapi.com/docs
+  tags:
+  - Bundle
+  properties:
+  - type: OpenAPI
+    url: openapi/asyncapi-bundle-api-openapi.yml
+- aid: asyncapi:asyncapi-convert-api
+  name: AsyncAPI Convert API
+  description: The Convert API from AsyncAPI — 1 operation(s) for convert.
+  humanURL: https://www.asyncapi.com/docs
+  tags:
+  - Convert
+  properties:
+  - type: OpenAPI
+    url: openapi/asyncapi-convert-api-openapi.yml
+- aid: asyncapi:asyncapi-diff-api
+  name: AsyncAPI Diff API
+  description: The Diff API from AsyncAPI — 1 operation(s) for diff.
+  humanURL: https://www.asyncapi.com/docs
+  tags:
+  - Diff
+  properties:
+  - type: OpenAPI
+    url: openapi/asyncapi-diff-api-openapi.yml
+- aid: asyncapi:asyncapi-generate-api
+  name: AsyncAPI Generate API
+  description: The Generate API from AsyncAPI — 1 operation(s) for generate.
+  humanURL: https://www.asyncapi.com/docs
+  tags:
+  - Generate
+  properties:
+  - type: OpenAPI
+    url: openapi/asyncapi-generate-api-openapi.yml
+- aid: asyncapi:asyncapi-help-api
+  name: AsyncAPI Help API
+  description: The Help API from AsyncAPI — 1 operation(s) for help.
+  humanURL: https://www.asyncapi.com/docs
+  tags:
+  - Help
+  properties:
+  - type: OpenAPI
+    url: openapi/asyncapi-help-api-openapi.yml
+- aid: asyncapi:asyncapi-parse-api
+  name: AsyncAPI Parse API
+  description: The Parse API from AsyncAPI — 1 operation(s) for parse.
+  humanURL: https://www.asyncapi.com/docs
+  tags:
+  - Parse
+  properties:
+  - type: OpenAPI
+    url: openapi/asyncapi-parse-api-openapi.yml
+- aid: asyncapi:asyncapi-validate-api
+  name: AsyncAPI Validate API
+  description: The Validate API from AsyncAPI — 1 operation(s) for validate.
+  humanURL: https://www.asyncapi.com/docs
+  tags:
+  - Validate
+  properties:
+  - type: OpenAPI
+    url: openapi/asyncapi-validate-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/asyncapi-agentic-access.yml
