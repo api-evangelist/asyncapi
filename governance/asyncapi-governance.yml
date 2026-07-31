@@ -1,0 +1,21 @@
+generated: '2026-07-31'
+method: searched
+source:
+- https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- https://github.com/asyncapi/community
+type: Governance
+host: Linux Foundation
+model: Open source, TSC-governed
+bodies:
+- name: Technical Steering Committee
+  abbr: TSC
+  members: 34
+  source: https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+  note: Published as machine-readable YAML with a tscMemberSince date per member.
+- name: Maintainers
+  members: 66
+  source: https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  note: Published as machine-readable YAML listing the repositories each maintainer owns.
+observation: Unlike most standards bodies profiled in this series, AsyncAPI publishes its governance rosters as structured data rather than prose,
+  which makes the coalition itself machine-readable.

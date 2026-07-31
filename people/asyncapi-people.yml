@@ -1,0 +1,1081 @@
+generated: '2026-07-31'
+method: searched
+source:
+- https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+type: People
+summary:
+  people: 66
+  tsc_members: 34
+  maintainers: 66
+  with_github_id: 66
+  contributing: 57
+  bodies:
+    Technical Steering Committee: 31
+    Maintainers: 66
+  note: AsyncAPI publishes its governance as machine-readable YAML in asyncapi/community — MAINTAINERS.yaml and TSC_BOARD_MEMBERS.yaml — including
+    the repositories each maintainer owns and the date they joined the TSC.
+people:
+- name: Fran Méndez
+  github_id: fmvilas
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - spec
+  - spec-json-schemas
+  - extensions-catalog
+  - converter-js
+  - bindings
+  - html-template
+  - markdown-template
+  repo_count: 7
+  available_for_hire: false
+  contributions: 1472
+  contributed_repo_count: 24
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Pavel Bodiachevskii
+  github_id: Pakisan
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - spec-json-schemas
+  - tck
+  - jasyncapi
+  - jasyncapi-idea-plugin
+  repo_count: 4
+  available_for_hire: false
+  contributions: 1109
+  contributed_repo_count: 6
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Lukasz Gornicki
+  github_id: derberg
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - spec
+  - website
+  - spec-json-schemas
+  - generator
+  - extensions-catalog
+  - bindings
+  - html-template
+  - markdown-template
+  - .github
+  - community
+  - diff
+  repo_count: 11
+  available_for_hire: true
+  contributions: 762
+  contributed_repo_count: 30
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Jonas Lagoni
+  github_id: jonaslagoni
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - spec-json-schemas
+  - generator
+  - converter-js
+  - modelina
+  - parser-api
+  - EDAVisualiser
+  repo_count: 6
+  available_for_hire: false
+  contributions: 531
+  contributed_repo_count: 18
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Maciej Urbańczyk
+  github_id: magicmatatjahu
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - generator
+  - asyncapi-react
+  - parser-js
+  - converter-js
+  - studio
+  - html-template
+  - markdown-template
+  - modelina
+  - diff
+  - EDAVisualiser
+  repo_count: 10
+  available_for_hire: false
+  contributions: 234
+  contributed_repo_count: 20
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Thulisile Sibanda
+  github_id: thulieblack
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - website
+  - conference-website
+  - community
+  repo_count: 3
+  available_for_hire: false
+  contributions: 206
+  contributed_repo_count: 6
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Charles d'Avernas
+  github_id: cdavernas
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2025-03-25'
+  repos:
+  - net-sdk
+  repo_count: 1
+  available_for_hire: false
+  contributions: 182
+  contributed_repo_count: 3
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Michael Wildman
+  github_id: m-wild
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - saunter
+  repo_count: 1
+  available_for_hire: null
+  contributions: 176
+  contributed_repo_count: 2
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Sergio Moya
+  github_id: smoya
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - parser-api
+  repo_count: 1
+  available_for_hire: false
+  contributions: 145
+  contributed_repo_count: 15
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Azeez Elegbede
+  github_id: AceTheCreator
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - asyncapi-react
+  - conference-website
+  repo_count: 2
+  available_for_hire: false
+  contributions: 120
+  contributed_repo_count: 9
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Lorenz Simon
+  github_id: lorenzsimon
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - kotlin-asyncapi
+  repo_count: 1
+  available_for_hire: null
+  contributions: 119
+  contributed_repo_count: 2
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Ashish Padhy
+  github_id: Shurtu-gal
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2024-01-26'
+  repos:
+  - studio
+  - .github
+  - cli
+  repo_count: 3
+  available_for_hire: true
+  contributions: 115
+  contributed_repo_count: 16
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Souvik De
+  github_id: Souvikns
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - cli
+  - bundler
+  repo_count: 2
+  available_for_hire: false
+  contributions: 100
+  contributed_repo_count: 5
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Khuda Dad Nomani
+  github_id: KhudaDad414
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - studio
+  repo_count: 2
+  available_for_hire: false
+  contributions: 94
+  contributed_repo_count: 11
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Daniel Raper
+  github_id: dan-r
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - java-template
+  repo_count: 1
+  available_for_hire: false
+  contributions: 87
+  contributed_repo_count: 4
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Adi Boghawala
+  github_id: Adi-204
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2025-08-27'
+  repos:
+  - generator
+  repo_count: 1
+  available_for_hire: true
+  contributions: 84
+  contributed_repo_count: 5
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: aeworxet
+  github_id: aeworxet
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - community
+  repo_count: 1
+  available_for_hire: false
+  contributions: 82
+  contributed_repo_count: 9
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Akshat Nema
+  github_id: akshatnema
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - website
+  repo_count: 1
+  available_for_hire: true
+  contributions: 77
+  contributed_repo_count: 9
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Sambhav Gupta
+  github_id: sambhavgupta0705
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - website
+  repo_count: 1
+  available_for_hire: true
+  contributions: 57
+  contributed_repo_count: 11
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Aayush Saini
+  github_id: AayushSaini101
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2025-01-13'
+  repos:
+  - parser-js
+  - openapi-schema-parser
+  - cli
+  repo_count: 3
+  available_for_hire: true
+  contributions: 48
+  contributed_repo_count: 7
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Aayush Sahu
+  github_id: aayushmau5
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - diff
+  repo_count: 1
+  available_for_hire: false
+  contributions: 44
+  contributed_repo_count: 6
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Lewis Relph
+  github_id: lewis-relph
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - java-template
+  repo_count: 1
+  available_for_hire: false
+  contributions: 38
+  contributed_repo_count: 1
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Michael Davis
+  github_id: damaru-inc
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  - java-spring-cloud-stream-template
+  repo_count: 3
+  available_for_hire: false
+  contributions: 37
+  contributed_repo_count: 6
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Prince Rajpoot
+  github_id: princerajpoot20
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-11-30'
+  repos:
+  - website
+  - parser-js
+  - studio
+  - openapi-schema-parser
+  - optimizer
+  - bundler
+  repo_count: 6
+  available_for_hire: true
+  contributions: 36
+  contributed_repo_count: 8
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Ivan Garcia Sainz-Aja
+  github_id: ivangsa
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - vs-asyncapi-preview
+  repo_count: 1
+  available_for_hire: false
+  contributions: 35
+  contributed_repo_count: 5
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Samir AMZANI
+  github_id: Amzani
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2024-01-26'
+  repos:
+  - studio
+  - cli
+  repo_count: 2
+  available_for_hire: false
+  contributions: 35
+  contributed_repo_count: 4
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Heiko Henning
+  github_id: GreenRover
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec
+  - spec-json-schemas
+  - bindings
+  - protobuf-schema-parser
+  repo_count: 4
+  available_for_hire: false
+  contributions: 34
+  contributed_repo_count: 8
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Dale Lane
+  github_id: dalelane
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - spec
+  - spec-json-schemas
+  - bindings
+  - avro-schema-parser
+  - java-template
+  repo_count: 5
+  available_for_hire: false
+  contributions: 30
+  contributed_repo_count: 8
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Antonio
+  github_id: bandantonio
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - website
+  - community
+  repo_count: 2
+  available_for_hire: null
+  contributions: 28
+  contributed_repo_count: 3
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: TenzDelek
+  github_id: TenzDelek
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2026-02-17'
+  repos:
+  - conference-website
+  repo_count: 1
+  available_for_hire: true
+  contributions: 28
+  contributed_repo_count: 3
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Ansh Goyal
+  github_id: anshgoyalevil
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2024-05-29'
+  repos:
+  - website
+  repo_count: 1
+  available_for_hire: true
+  contributions: 25
+  contributed_repo_count: 2
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Kieran Murphy
+  github_id: KieranM1999
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - java-template
+  repo_count: 1
+  available_for_hire: false
+  contributions: 24
+  contributed_repo_count: 1
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Vladimír Gorej
+  github_id: char0n
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec
+  - spec-json-schemas
+  - bindings
+  repo_count: 3
+  available_for_hire: false
+  contributions: 24
+  contributed_repo_count: 6
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Florence Njeri
+  github_id: Florence-Njeri
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - generator
+  - .github
+  repo_count: 2
+  available_for_hire: true
+  contributions: 22
+  contributed_repo_count: 5
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Samridhi Agrawal
+  github_id: Samridhi-98
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - modelina
+  repo_count: 1
+  available_for_hire: false
+  contributions: 19
+  contributed_repo_count: 5
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Mohammed Mehdi
+  github_id: catosaurusrex2003
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2026-04-22'
+  repos:
+  - asyncapi-react
+  repo_count: 1
+  available_for_hire: true
+  contributions: 18
+  contributed_repo_count: 7
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Ludovic Dussart
+  github_id: M3lkior
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - avro-schema-parser
+  repo_count: 1
+  available_for_hire: false
+  contributions: 14
+  contributed_repo_count: 6
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Cameron Rushton
+  github_id: CameronRushton
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  - java-spring-cloud-stream-template
+  repo_count: 3
+  available_for_hire: false
+  contributions: 13
+  contributed_repo_count: 2
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Aishat Muibudeen
+  github_id: Mayaleeeee
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-13'
+  repos:
+  - website
+  - conference-website
+  - brand
+  repo_count: 3
+  available_for_hire: true
+  contributions: 12
+  contributed_repo_count: 5
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Kenneth Aasan
+  github_id: kennethaasan
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - modelina
+  repo_count: 1
+  available_for_hire: false
+  contributions: 11
+  contributed_repo_count: 3
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Akshit Gupta
+  github_id: akkshitgupta
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - modelina
+  repo_count: 1
+  available_for_hire: true
+  contributions: 10
+  contributed_repo_count: 5
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Christine Belzie
+  github_id: CBID2
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - website
+  - community
+  repo_count: 2
+  available_for_hire: true
+  contributions: 10
+  contributed_repo_count: 2
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Philip Schlesinger @ Cryoport
+  github_id: philCryoport
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - jasyncapi-idea-plugin
+  repo_count: 1
+  available_for_hire: null
+  contributions: 10
+  contributed_repo_count: 2
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Ruchi Pakhle
+  github_id: Ruchip16
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - vs-asyncapi-preview
+  repo_count: 1
+  available_for_hire: true
+  contributions: 8
+  contributed_repo_count: 4
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Alexander Wichmann
+  github_id: VisualBean
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: false
+  contributions: 7
+  contributed_repo_count: 5
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: HariKrishnan
+  github_id: harikrishnan83
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2025-01-21'
+  repos:
+  - jasyncapi
+  repo_count: 1
+  available_for_hire: false
+  contributions: 6
+  contributed_repo_count: 1
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Laurent Broudoux
+  github_id: lbroudoux
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: false
+  contributions: 6
+  contributed_repo_count: 3
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Rohit T
+  github_id: TRohit20
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2025-02-17'
+  repos:
+  - website
+  repo_count: 1
+  available_for_hire: true
+  contributions: 5
+  contributed_repo_count: 3
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: artur-ciocanu
+  github_id: artur-ciocanu
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - modelina
+  repo_count: 1
+  available_for_hire: null
+  contributions: 5
+  contributed_repo_count: 1
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: yurvon-screamo
+  github_id: yurvon-screamo
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - saunter
+  repo_count: 1
+  available_for_hire: null
+  contributions: 4
+  contributed_repo_count: 2
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Gerald Loeffler
+  github_id: GeraldLoeffler
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: false
+  contributions: 3
+  contributed_repo_count: 2
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Jeremy Whitlock
+  github_id: whitlockjc
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: false
+  contributions: 2
+  contributed_repo_count: 2
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Dec Kolakowski
+  github_id: dpwdec
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: null
+  contributions: 1
+  contributed_repo_count: 1
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Florian Gramß
+  github_id: gramss
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: null
+  contributions: 1
+  contributed_repo_count: 1
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Ian Cooper
+  github_id: iancooper
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: null
+  contributions: 1
+  contributed_repo_count: 1
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Philip Schlesinger
+  github_id: theschles
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - jasyncapi-idea-plugin
+  repo_count: 1
+  available_for_hire: false
+  contributions: 1
+  contributed_repo_count: 1
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Richard Coppen
+  github_id: rcoppen
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2023-07-05'
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: false
+  contributions: 1
+  contributed_repo_count: 1
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Akshaya Gurlhosur
+  github_id: AGurlhosur
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - java-template
+  repo_count: 1
+  available_for_hire: null
+  contributions: null
+  contributed_repo_count: null
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Andrei
+  github_id: gimlet2
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - kotlin-asyncapi
+  repo_count: 1
+  available_for_hire: true
+  contributions: null
+  contributed_repo_count: null
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Jean-Baptiste Bianchi
+  github_id: jbbianchi
+  org: null
+  bodies:
+  - Technical Steering Committee
+  - Maintainers
+  tsc_member_since: '2025-03-25'
+  repos:
+  - net-sdk
+  repo_count: 1
+  available_for_hire: false
+  contributions: null
+  contributed_repo_count: null
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  - https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- name: Leigh Johnson
+  github_id: leigh-johnson
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - modelina
+  repo_count: 1
+  available_for_hire: null
+  contributions: null
+  contributed_repo_count: null
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Mihael Bosnjak
+  github_id: mboss37
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: null
+  contributions: null
+  contributed_repo_count: null
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Steve Head
+  github_id: SrfHead
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: null
+  contributions: null
+  contributed_repo_count: null
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: Zbigniew Malcherczyk
+  github_id: ferror
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - modelina
+  repo_count: 1
+  available_for_hire: null
+  contributions: null
+  contributed_repo_count: null
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: amparosancho
+  github_id: amparosancho
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - spec-json-schemas
+  - bindings
+  repo_count: 2
+  available_for_hire: null
+  contributions: null
+  contributed_repo_count: null
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+- name: nathanaelweber
+  github_id: nathanaelweber
+  org: null
+  bodies:
+  - Maintainers
+  tsc_member_since: null
+  repos:
+  - protobuf-schema-parser
+  repo_count: 1
+  available_for_hire: null
+  contributions: null
+  contributed_repo_count: null
+  sources:
+  - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml

@@ -1,0 +1,640 @@
+generated: '2026-07-31'
+method: searched
+source: https://github.com/asyncapi
+type: Repositories
+organization: asyncapi
+summary:
+  total: 36
+  archived: 0
+  by_maturity:
+    unclassified: 35
+    governance: 1
+repositories:
+- name: .github
+  url: https://github.com/asyncapi/.github
+  description: Location of all reusable community health files
+  maturity: governance
+  stars: 36
+  forks: 90
+  open_issues: 11
+  archived: false
+  created: '2020-04-10'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - hacktoberfest
+- name: asyncapi-react
+  url: https://github.com/asyncapi/asyncapi-react
+  description: React component for rendering documentation from your specification in real-time in the
+    browser. It also provides a WebComponent and bundle for Angular and Vue
+  maturity: unclassified
+  stars: 241
+  forks: 178
+  open_issues: 23
+  archived: false
+  created: '2018-11-07'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - asyncapi-specification
+  - event
+  - get-global-node-release-workflows
+  - hacktoberfest
+  - nodejs
+  - react
+  - reactjs
+- name: avro-schema-parser
+  url: https://github.com/asyncapi/avro-schema-parser
+  description: An AsyncAPI schema parser for Avro 1.x schemas.
+  maturity: unclassified
+  stars: 33
+  forks: 19
+  open_issues: 3
+  archived: false
+  created: '2020-07-14'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - avro
+  - avro-schema
+  - avro-schema-registry
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - nodejs
+  - parser
+- name: bindings
+  url: https://github.com/asyncapi/bindings
+  description: AsyncAPI bindings specifications
+  maturity: unclassified
+  stars: 79
+  forks: 81
+  open_issues: 15
+  archived: false
+  created: '2019-08-24'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics: []
+- name: brand
+  url: https://github.com/asyncapi/brand
+  description: AsyncAPI brand guidelines and strategy
+  maturity: unclassified
+  stars: 10
+  forks: 12
+  open_issues: 3
+  archived: false
+  created: '2021-10-21'
+  updated: '2026-07-30'
+  license: null
+  topics: []
+- name: bundler
+  url: https://github.com/asyncapi/bundler
+  description: Combine multiple AsyncAPI specification files into one.
+  maturity: unclassified
+  stars: 32
+  forks: 15
+  open_issues: 8
+  archived: false
+  created: '2021-10-03'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - nodejs
+- name: cli
+  url: https://github.com/asyncapi/cli
+  description: CLI to work with your AsyncAPI files. You can validate them and in the future use a generator
+    and even bootstrap a new file. Contributions are welcomed!
+  maturity: unclassified
+  stars: 270
+  forks: 371
+  open_issues: 110
+  archived: false
+  created: '2021-02-16'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - cli
+  - docker
+  - get-global-docs-autoupdate
+  - get-global-releaserc
+  - hacktoberfest
+  - nodejs
+  - typescript
+- name: community
+  url: https://github.com/asyncapi/community
+  description: AsyncAPI community-related stuff.
+  maturity: unclassified
+  stars: 138
+  forks: 179
+  open_issues: 19
+  archived: false
+  created: '2021-03-14'
+  updated: '2026-07-31'
+  license: CC-BY-4.0
+  topics:
+  - get-global-holopin
+  - hacktoberfest
+  - nodejs
+- name: conference-website
+  url: https://github.com/asyncapi/conference-website
+  description: Website for the AsyncAPI online conference
+  maturity: unclassified
+  stars: 48
+  forks: 207
+  open_issues: 22
+  archived: false
+  created: '2020-04-02'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - hacktoberfest
+  - nextjs
+  - react
+- name: converter-js
+  url: https://github.com/asyncapi/converter-js
+  description: Convert to or migrate between AsyncAPI versions with the converter
+  maturity: unclassified
+  stars: 24
+  forks: 20
+  open_issues: 6
+  archived: false
+  created: '2019-05-11'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - convert
+  - converter
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - nodejs
+- name: diff
+  url: https://github.com/asyncapi/diff
+  description: Diff is a library that compares two AsyncAPI Documents and provides information about the
+    differences by pointing out explicitly information like breaking changes.
+  maturity: unclassified
+  stars: 28
+  forks: 15
+  open_issues: 3
+  archived: false
+  created: '2021-05-27'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - cli
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - javascript
+  - nodejs
+  - typescript
+- name: EDAVisualiser
+  url: https://github.com/asyncapi/EDAVisualiser
+  description: View your system, events, applications through different perspectives
+  maturity: unclassified
+  stars: 29
+  forks: 9
+  open_issues: 3
+  archived: false
+  created: '2022-10-27'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - angular
+  - asyncapi
+  - edavisualiser
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - nextjs
+  - nodejs
+  - react
+  - visualiser
+  - visualizer
+  - vue
+  - webcomponent
+- name: extensions-catalog
+  url: https://github.com/asyncapi/extensions-catalog
+  description: Catalog of extensions for AsyncAPI specification
+  maturity: unclassified
+  stars: 11
+  forks: 11
+  open_issues: 1
+  archived: false
+  created: '2019-03-26'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - get-workflows-validation
+- name: generator
+  url: https://github.com/asyncapi/generator
+  description: Use your AsyncAPI definition to generate literally anything. Markdown documentation, Node.js
+    code, HTML documentation, anything!
+  maturity: unclassified
+  stars: 1068
+  forks: 389
+  open_issues: 46
+  archived: false
+  created: '2018-07-24'
+  updated: '2026-07-31'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - codegen
+  - codegenerator
+  - documentation
+  - generator
+  - get-global-docs-autoupdate
+  - get-global-holopin
+  - get-global-prettierignore
+  - hacktoberfest
+  - nodejs
+- name: html-template
+  url: https://github.com/asyncapi/html-template
+  description: HTML template for AsyncAPI Generator. Use it to generate a static docs. It is using AsyncAPI
+    React component under the hood.
+  maturity: unclassified
+  stars: 92
+  forks: 75
+  open_issues: 15
+  archived: false
+  created: '2020-03-20'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - generator
+  - get-
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - html
+  - nodejs
+  - template
+- name: jasyncapi
+  url: https://github.com/asyncapi/jasyncapi
+  description: /jay-sync-api/ is a Java code-first tool for AsyncAPI specification
+  maturity: unclassified
+  stars: 81
+  forks: 25
+  open_issues: 1
+  archived: false
+  created: '2020-05-09'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - code-first
+  - java-library
+  - kotlin-library
+- name: jasyncapi-idea-plugin
+  url: https://github.com/asyncapi/jasyncapi-idea-plugin
+  description: '/jay-sync-api/-idea-plugin is a IDEA plugin for AsyncAPI specification '
+  maturity: unclassified
+  stars: 16
+  forks: 7
+  open_issues: 11
+  archived: false
+  created: '2022-10-27'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - asyncapi-schemas
+  - asyncapi-specification
+  - intellij-plugin
+- name: java-spring-cloud-stream-template
+  url: https://github.com/asyncapi/java-spring-cloud-stream-template
+  description: Java Spring Cloud Stream template for the AsyncAPI Generator
+  maturity: unclassified
+  stars: 37
+  forks: 39
+  open_issues: 3
+  archived: false
+  created: '2020-03-20'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - generator
+  - java
+  - nodejs
+  - spring-cloud-stream
+  - template
+- name: java-template
+  url: https://github.com/asyncapi/java-template
+  description: Java template for the AsyncAPI Generator
+  maturity: unclassified
+  stars: 14
+  forks: 18
+  open_issues: 1
+  archived: false
+  created: '2021-12-28'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - generator
+  - nodejs
+  - template
+- name: kotlin-asyncapi
+  url: https://github.com/asyncapi/kotlin-asyncapi
+  description: Simplify event-driven API documentation for Kotlin microservices
+  maturity: unclassified
+  stars: 51
+  forks: 5
+  open_issues: 4
+  archived: false
+  created: '2022-07-03'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - documentation
+  - event-driven
+  - java
+  - kotlin
+  - kotlin-asyncapi
+  - spring-boot
+- name: markdown-template
+  url: https://github.com/asyncapi/markdown-template
+  description: Markdown template for the AsyncAPI Generator
+  maturity: unclassified
+  stars: 36
+  forks: 38
+  open_issues: 6
+  archived: false
+  created: '2020-03-20'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - generator
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - markdown
+  - nodejs
+  - template
+- name: modelina
+  url: https://github.com/asyncapi/modelina
+  description: A library for generating typed models based on inputs such as AsyncAPI, OpenAPI, and JSON
+    Schema documents with high customization
+  maturity: unclassified
+  stars: 444
+  forks: 235
+  open_issues: 28
+  archived: false
+  created: '2021-01-21'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - codegen
+  - codegenerator
+  - cpp
+  - csharp
+  - generate-code
+  - go
+  - java
+  - json-schema
+  - kotlin
+  - modelina
+  - openapi2
+  - openapi3
+  - php
+  - rust
+  - swagger
+  - typescript
+- name: net-sdk
+  url: https://github.com/asyncapi/net-sdk
+  description: A .NET SDK for the Async API specification
+  maturity: unclassified
+  stars: 89
+  forks: 15
+  open_issues: 5
+  archived: false
+  created: '2021-07-06'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - amqp
+  - asyncapi
+  - client
+  - code-first
+  - documentation
+  - dotnet
+  - generator
+  - kafka
+  - mqtt
+  - nats
+  - websocket
+- name: openapi-schema-parser
+  url: https://github.com/asyncapi/openapi-schema-parser
+  description: An AsyncAPI schema parser for OpenAPI 3.0.x and Swagger 2.x schemas.
+  maturity: unclassified
+  stars: 19
+  forks: 11
+  open_issues: 4
+  archived: false
+  created: '2020-03-11'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - nodejs
+  - openapi
+  - parser
+- name: optimizer
+  url: https://github.com/asyncapi/optimizer
+  description: AsyncAPI offers many different ways to reuse certain parts of the document like messages
+    or schemas definitions or references to external files, not to even mention the traits. There is a
+    need for a tool that can be plugged into any workflows and optimize documents that are generated from
+    code, but not only.
+  maturity: unclassified
+  stars: 12
+  forks: 11
+  open_issues: 7
+  archived: false
+  created: '2021-05-27'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - nodejs
+  - typescript
+- name: parser-api
+  url: https://github.com/asyncapi/parser-api
+  description: Global API definition for all AsyncAPI Parser implementations.
+  maturity: unclassified
+  stars: 11
+  forks: 9
+  open_issues: 3
+  archived: false
+  created: '2021-04-22'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics: []
+- name: parser-js
+  url: https://github.com/asyncapi/parser-js
+  description: AsyncAPI parser for Javascript (browser-compatible too).
+  maturity: unclassified
+  stars: 144
+  forks: 135
+  open_issues: 33
+  archived: false
+  created: '2019-03-18'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - get-global-docs-autoupdate
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - hacktoberfest
+  - javascript
+  - json-schema
+  - nodejs
+  - parser
+- name: protobuf-schema-parser
+  url: https://github.com/asyncapi/protobuf-schema-parser
+  description: Schema parser for Protobuf compatible with AsyncAPI JS Parser
+  maturity: unclassified
+  stars: 11
+  forks: 4
+  open_issues: 0
+  archived: false
+  created: '2023-04-04'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - nodejs
+  - parser
+  - protobuf
+  - schema
+- name: saunter
+  url: https://github.com/asyncapi/saunter
+  description: Saunter is a code-first AsyncAPI documentation generator for dotnet.
+  maturity: unclassified
+  stars: 227
+  forks: 63
+  open_issues: 59
+  archived: false
+  created: '2019-09-17'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - amqp
+  - aspnetcore
+  - asyncapi
+  - documentation
+  - dotnet
+  - openapi
+- name: spec
+  url: https://github.com/asyncapi/spec
+  description: The AsyncAPI specification allows you to create machine-readable definitions of your asynchronous
+    APIs.
+  maturity: unclassified
+  stars: 5258
+  forks: 383
+  open_issues: 43
+  archived: false
+  created: '2016-11-18'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - amqp
+  - asyncapi
+  - kafka
+  - mqtt
+  - reactive
+  - specification
+  - stomp
+  - websockets
+- name: spec-json-schemas
+  url: https://github.com/asyncapi/spec-json-schemas
+  description: AsyncAPI schema versions
+  maturity: unclassified
+  stars: 75
+  forks: 65
+  open_issues: 14
+  archived: false
+  created: '2018-03-30'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - nodejs
+- name: studio
+  url: https://github.com/asyncapi/studio
+  description: Visually design your AsyncAPI files and event-driven architecture.
+  maturity: unclassified
+  stars: 209
+  forks: 139
+  open_issues: 39
+  archived: false
+  created: '2020-02-29'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - asyncapi
+  - hacktoberfest
+  - react
+- name: tck
+  url: https://github.com/asyncapi/tck
+  description: (WIP) Test Compatibility Suite for AsyncAPI
+  maturity: unclassified
+  stars: 12
+  forks: 19
+  open_issues: 10
+  archived: false
+  created: '2020-01-07'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - nodejs
+- name: training
+  url: https://github.com/asyncapi/training
+  description: All about trainings, workshops, courses, etc.
+  maturity: unclassified
+  stars: 8
+  forks: 5
+  open_issues: 3
+  archived: false
+  created: '2021-05-10'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics: []
+- name: vs-asyncapi-preview
+  url: https://github.com/asyncapi/vs-asyncapi-preview
+  description: VSCode AsyncAPI Preview Extension
+  maturity: unclassified
+  stars: 60
+  forks: 48
+  open_issues: 0
+  archived: false
+  created: '2020-09-16'
+  updated: '2026-07-30'
+  license: Apache-2.0
+  topics:
+  - get-global-node-release-workflows
+  - get-global-releaserc
+  - nodejs
+- name: website
+  url: https://github.com/asyncapi/website
+  description: AsyncAPI specification website
+  maturity: unclassified
+  stars: 716
+  forks: 1236
+  open_issues: 84
+  archived: false
+  created: '2017-05-12'
+  updated: '2026-07-31'
+  license: Apache-2.0
+  topics:
+  - nextjs
+  - react
+  - tailwindcss

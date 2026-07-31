@@ -1,0 +1,60 @@
+generated: '2026-07-31'
+method: searched
+source:
+- https://www.asyncapi.com/
+- https://github.com/asyncapi
+type: Taxonomy
+note: 'AsyncAPI''s own split: a specification family plus a first-party tooling suite. Unlike the OpenAPI Initiative, which points at third-party
+  tools, AsyncAPI ships the generator, CLI, studio, parser and renderer itself.'
+specifications:
+- name: bindings
+  stars: 79
+  description: AsyncAPI bindings specifications
+- name: spec
+  stars: 5258
+  description: The AsyncAPI specification allows you to create machine-readable definitions of your asynchronous APIs.
+- name: spec-json-schemas
+  stars: 75
+  description: AsyncAPI schema versions
+first_party_tooling:
+- name: generator
+  stars: 1068
+  description: Use your AsyncAPI definition to generate literally anything. Markdown documentation, Node.js code, HTML documentation, anything!
+- name: modelina
+  stars: 444
+  description: A library for generating typed models based on inputs such as AsyncAPI, OpenAPI, and JSON Schema documents with high customization
+- name: cli
+  stars: 270
+  description: CLI to work with your AsyncAPI files. You can validate them and in the future use a generator and even bootstrap a new file. Contributions
+    are welcomed!
+- name: asyncapi-react
+  stars: 241
+  description: React component for rendering documentation from your specification in real-time in the browser. It also provides a WebComponent
+    and bundle for Angular and Vue
+- name: studio
+  stars: 209
+  description: Visually design your AsyncAPI files and event-driven architecture.
+- name: parser-js
+  stars: 144
+  description: AsyncAPI parser for Javascript (browser-compatible too).
+- name: html-template
+  stars: 92
+  description: HTML template for AsyncAPI Generator. Use it to generate a static docs. It is using AsyncAPI React component under the hood.
+- name: avro-schema-parser
+  stars: 33
+  description: An AsyncAPI schema parser for Avro 1.x schemas.
+- name: diff
+  stars: 28
+  description: Diff is a library that compares two AsyncAPI Documents and provides information about the differences by pointing out explicitly
+    information like breaking changes.
+- name: converter-js
+  stars: 24
+  description: Convert to or migrate between AsyncAPI versions with the converter
+- name: openapi-schema-parser
+  stars: 19
+  description: An AsyncAPI schema parser for OpenAPI 3.0.x and Swagger 2.x schemas.
+- name: optimizer
+  stars: 12
+  description: AsyncAPI offers many different ways to reuse certain parts of the document like messages or schemas definitions or references to
+    external files, not to even mention the traits. There is a need for a tool that can be plugged into any workflows and optimize documents that
+    are generated from code, but not only.

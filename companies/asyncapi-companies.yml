@@ -1,0 +1,12 @@
+generated: '2026-07-31'
+method: searched
+source:
+- https://api-gw.platform.linuxfoundation.org/project-service/v1/public/projects?slug=asyncapi
+- https://github.com/asyncapi/.github/blob/master/CHARTER.md
+type: Companies
+summary:
+  companies: 0
+  note: AsyncAPI has NO corporate membership roster. The Linux Foundation records it under the Crowdfunding model (project start 2021-03-19),
+    not the Membership model that carries a member list. The coalition is therefore individuals and maintainers rather than paying member organizations
+    — profiled in people/ instead. This is a structural difference from the OpenAPI Initiative, which lists 100 member organizations.
+companies: []
