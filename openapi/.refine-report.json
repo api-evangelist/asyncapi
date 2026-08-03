@@ -1,0 +1,26 @@
+{
+  "provider": "asyncapi",
+  "sources": [
+    "asyncapi-bundle-api-openapi.yml",
+    "asyncapi-convert-api-openapi.yml",
+    "asyncapi-diff-api-openapi.yml",
+    "asyncapi-generate-api-openapi.yml",
+    "asyncapi-help-api-openapi.yml",
+    "asyncapi-parse-api-openapi.yml",
+    "asyncapi-validate-api-openapi.yml"
+  ],
+  "outputs": [
+    "asyncapi-bundle-api-openapi.yml",
+    "asyncapi-convert-api-openapi.yml",
+    "asyncapi-diff-api-openapi.yml",
+    "asyncapi-generate-api-openapi.yml",
+    "asyncapi-help-api-openapi.yml",
+    "asyncapi-parse-api-openapi.yml",
+    "asyncapi-validate-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
