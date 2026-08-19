@@ -1,0 +1,64 @@
+generated: '2026-08-12'
+method: searched
+source:
+- https://opencollective.com/asyncapi
+- https://www.asyncapi.com/
+type: Funding
+organization: AsyncAPI Initiative
+host: Linux Foundation
+fiscal_host: Open Source Collective
+model: Sponsored collective on Open Collective. AsyncAPI is a Linux Foundation project but
+  is financed through direct sponsorship rather than a membership program, so unlike the
+  OpenAPI Initiative there is no corporate member roster.
+totals:
+  contributions_received: 546928.47
+  contributions_count: 127
+  expenses_paid: 200983.69
+  expenses_count: 236
+  current_balance: 38923.52
+  estimated_annual_budget: 38895
+  recurring_contributions:
+    count: 29
+    amount: 283374.24
+  one_time_contributions:
+    count: 98
+    amount: 263554.23
+  currency: USD
+top_organizations:
+- name: Solace
+  amount: 186000
+  since: '2019-04'
+- name: IBM
+  amount: 72000
+  since: '2021-12'
+- name: IQVIA Technologies
+  amount: 56000
+  since: '2019-11'
+- name: Gravitee
+  amount: 48000
+  since: '2024-05'
+- name: Postman
+  amount: 34000
+  since: '2024-02'
+- name: Kong
+  amount: 12000
+  since: '2025-02'
+- name: Route4Me
+  amount: 10000
+  since: '2024-08'
+homepage_sponsors:
+- Gravitee.io
+- IBM
+- Solace
+- Svix
+- Aklivity
+in_kind_services:
+- Slack
+- Netlify
+- SonarCloud
+- DigitalOcean
+- Restream
+observation: Five organizations account for the large majority of seven years of funding, and
+  most are event-infrastructure vendors with a direct commercial interest in the specification
+  succeeding. The contributor base is broader than the OpenAPI Initiative's while the financial
+  base is materially narrower.

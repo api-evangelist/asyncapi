@@ -1,0 +1,33 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AsyncAPI Server Bundle Diff API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Diff",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Diff two AsyncAPI documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/diff",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Diff two AsyncAPI documents"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,33 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AsyncAPI Server Bundle Generate API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Generate",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Generate code or documentation from an AsyncAPI document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/generate",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Generate code or documentation from an AsyncAPI document"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

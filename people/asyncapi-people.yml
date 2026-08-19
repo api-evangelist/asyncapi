@@ -1,20 +1,22 @@
-generated: '2026-07-31'
+generated: '2026-08-12'
 method: searched
 source:
 - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
-- https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- https://www.asyncapi.com/community/tsc
 type: People
 summary:
   people: 66
-  tsc_members: 34
+  tsc_members: 31
   maintainers: 66
   with_github_id: 66
   contributing: 57
   bodies:
     Technical Steering Committee: 31
     Maintainers: 66
-  note: AsyncAPI publishes its governance as machine-readable YAML in asyncapi/community — MAINTAINERS.yaml and TSC_BOARD_MEMBERS.yaml — including
-    the repositories each maintainer owns and the date they joined the TSC.
+  note: 'AsyncAPI publishes its governance as machine-readable YAML in asyncapi/community (MAINTAINERS.yaml), including the
+    repositories each maintainer owns and the date they joined the TSC. Re-harvested 2026-08-12: 66 maintainers, 31 of them
+    TSC members. The rendered roster at asyncapi.com/community/tsc listed 34 on that date — the site has drifted from the
+    file it renders, and the file is treated as canonical.'
 people:
 - name: Fran Méndez
   github_id: fmvilas

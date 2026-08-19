@@ -1,0 +1,33 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AsyncAPI Server Bundle Validate API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Validate",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Validate an AsyncAPI document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/validate",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Validate an AsyncAPI document"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

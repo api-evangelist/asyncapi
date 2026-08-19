@@ -1,8 +1,8 @@
-generated: '2026-07-31'
+generated: '2026-08-12'
 method: searched
 source:
 - https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
-- https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
+- https://www.asyncapi.com/community/tsc
 - https://github.com/asyncapi/community
 type: Governance
 host: Linux Foundation
@@ -10,12 +10,32 @@ model: Open source, TSC-governed
 bodies:
 - name: Technical Steering Committee
   abbr: TSC
-  members: 34
-  source: https://github.com/asyncapi/community/blob/master/TSC_BOARD_MEMBERS.yaml
-  note: Published as machine-readable YAML with a tscMemberSince date per member.
+  members: 31
+  source: https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
+  note: Counted from isTscMember in MAINTAINERS.yaml, the machine-readable source of record.
+    Each TSC member carries a tscMemberSince date. Joining years - 2023 20, 2024 3,
+    2025 6, 2026 2.
+  discrepancy: The rendered roster at asyncapi.com/community/tsc listed 34 members when
+    checked on 2026-08-12, three more than the machine-readable file. The site and the
+    source file are out of step; the file is treated as canonical here.
 - name: Maintainers
   members: 66
   source: https://github.com/asyncapi/community/blob/master/MAINTAINERS.yaml
   note: Published as machine-readable YAML listing the repositories each maintainer owns.
-observation: Unlike most standards bodies profiled in this series, AsyncAPI publishes its governance rosters as structured data rather than prose,
-  which makes the coalition itself machine-readable.
+    All 66 records enumerate repositories, covering 35 distinct projects. 17 of the 66
+    set an availableForHire flag.
+record_fields:
+- github
+- githubID
+- name
+- isTscMember
+- tscMemberSince
+- repos
+- availableForHire
+- slack
+- twitter
+- linkedin
+observation: Unlike most standards bodies profiled in this series, AsyncAPI publishes its
+  governance rosters as structured data rather than prose, which makes the coalition itself
+  machine-readable. The one caveat found on re-harvest is that the rendered website roster
+  has drifted from the file it is meant to render.

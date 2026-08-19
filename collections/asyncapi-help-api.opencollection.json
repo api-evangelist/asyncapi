@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AsyncAPI Server Bundle Help API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Help",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve command and endpoint help",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://localhost/help"
+          },
+          "docs": "Retrieve command and endpoint help"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

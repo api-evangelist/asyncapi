@@ -1,0 +1,33 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AsyncAPI Server Bundle API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Bundle",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Bundle multiple AsyncAPI documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/bundle",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Bundle multiple AsyncAPI documents"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

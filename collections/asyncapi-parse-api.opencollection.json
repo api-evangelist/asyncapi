@@ -1,0 +1,33 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AsyncAPI Server Bundle Parse API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Parse",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Parse an AsyncAPI document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/parse",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Parse an AsyncAPI document"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

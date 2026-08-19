@@ -1,0 +1,33 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AsyncAPI Server Bundle Convert API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Convert",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Convert an AsyncAPI document to another version or format",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost/convert",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Convert an AsyncAPI document to another version or format"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
