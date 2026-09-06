@@ -1,0 +1,93 @@
+generated: '2026-09-06'
+method: searched
+source: >-
+  https://www.asyncapi.com/docs/tools/cli,
+  https://github.com/asyncapi/cli/blob/master/docs/usage.md,
+  https://formulae.brew.sh/api/formula/asyncapi.json,
+  https://registry.npmjs.org/@asyncapi/cli
+name: asyncapi
+package: '@asyncapi/cli'
+version: 6.0.2
+published: '2026-06-07'
+license: Apache-2.0
+repository: https://github.com/asyncapi/cli
+docs: https://www.asyncapi.com/docs/tools/cli
+install:
+  - method: npm
+    command: npm install -g @asyncapi/cli
+  - method: homebrew
+    command: brew install asyncapi
+    version: 6.0.2
+  - method: docker
+    command: docker run --rm asyncapi/cli
+    registry: https://hub.docker.com/r/asyncapi/cli
+  - method: binaries
+    docs: https://www.asyncapi.com/docs/tools/cli/installation
+    note: Platform installers are documented on the installation page.
+commands:
+  - group: validate
+    commands:
+      - {command: 'asyncapi validate [SPEC-FILE]', description: Validate an AsyncAPI document against the specification.}
+  - group: generate
+    commands:
+      - {command: 'asyncapi generate', description: Generate models, clients or documentation from templates.}
+      - {command: 'asyncapi generate client LANGUAGE [ASYNCAPI]', description: Generate a client with the baked-in generator.}
+      - {command: 'asyncapi generate fromTemplate [ASYNCAPI] [TEMPLATE]', description: Generate output using a custom template.}
+      - {command: 'asyncapi generate models LANGUAGE FILE', description: Generate typed models (Modelina).}
+  - group: transform
+    commands:
+      - {command: 'asyncapi convert [SPEC-FILE]', description: Convert AsyncAPI documents to newer versions, or OpenAPI documents to AsyncAPI.}
+      - {command: 'asyncapi format [SPEC-FILE]', description: Convert a document between yaml, yml and JSON.}
+      - {command: 'asyncapi optimize [SPEC-FILE]', description: Reduce size and duplication in a specification file.}
+      - {command: 'asyncapi pretty SPEC-FILE', description: Beautify indentation and styling of a spec file.}
+      - {command: 'asyncapi bundle', description: Bundle one or more documents and their references into a single file.}
+  - group: compare
+    commands:
+      - {command: 'asyncapi diff OLD NEW', description: Find the difference between two AsyncAPI files.}
+  - group: scaffold
+    commands:
+      - {command: 'asyncapi new', description: Create AsyncAPI projects, specifications or templates.}
+      - {command: 'asyncapi new file', description: Create a new AsyncAPI file.}
+      - {command: 'asyncapi new template', description: Create a new generator template.}
+  - group: serve
+    commands:
+      - {command: 'asyncapi start', description: Launch AsyncAPI services.}
+      - {command: 'asyncapi start studio [SPEC-FILE]', description: Start a local instance of AsyncAPI Studio.}
+      - {command: 'asyncapi start preview SPEC-FILE', description: Start Studio in minimal preview state.}
+      - {command: 'asyncapi start api', description: Start the AsyncAPI Server API locally — the same service hosted at api.asyncapi.com/v1.}
+  - group: config
+    commands:
+      - {command: 'asyncapi config', description: CLI configuration settings.}
+      - {command: 'asyncapi config analytics', description: Enable or disable metrics collection.}
+      - {command: 'asyncapi config auth add PATTERN TOKEN', description: Store an HTTP Authorization header used when resolving protected document URLs.}
+      - {command: 'asyncapi config context', description: Manage aliases for AsyncAPI document paths.}
+      - {command: 'asyncapi config context add', description: Add a context to storage.}
+      - {command: 'asyncapi config context current', description: Display the active context.}
+      - {command: 'asyncapi config context edit', description: Modify a stored context.}
+      - {command: 'asyncapi config context init', description: Initialize context configuration.}
+      - {command: 'asyncapi config context list', description: List stored contexts.}
+      - {command: 'asyncapi config context remove', description: Delete a context.}
+      - {command: 'asyncapi config context use', description: Set the current context.}
+      - {command: 'asyncapi config versions', description: Show the versions of the AsyncAPI tools in use.}
+  - group: shell
+    commands:
+      - {command: 'asyncapi autocomplete [SHELL]', description: Print autocomplete installation instructions.}
+key_flows:
+  - name: Validate in CI
+    steps: [asyncapi validate asyncapi.yaml]
+    note: The same check the hosted POST /v1/validate performs.
+  - name: Upgrade a 2.x document to 3.1.0
+    steps: ['asyncapi convert asyncapi.yaml -t 3.1.0']
+  - name: Edit visually then validate
+    steps: ['asyncapi start studio asyncapi.yaml', 'asyncapi validate asyncapi.yaml']
+  - name: Run the API locally instead of calling the hosted one
+    steps: ['asyncapi start api']
+notes:
+  - >-
+    `asyncapi start api` is the bridge between this CLI and the API in openapi/ —
+    the hosted service at https://api.asyncapi.com/v1 is this CLI's api app,
+    deployed. Self-hosting gets the same eight operations.
+  - >-
+    v6.0.0 (2026-02-01) removed Postman-to-AsyncAPI conversion; v5.0.1 removed
+    Generator v1/v2 support. Both are breaking and both are announced only in
+    release notes.

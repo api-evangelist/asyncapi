@@ -1,92 +1,55 @@
-specification: API Commons Rate Limits
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+generated: '2026-09-06'
+method: probed
+source: >-
+  live unauthenticated calls to https://api.asyncapi.com/v1 on 2026-09-06, plus a
+  search of https://www.asyncapi.com/docs and the asyncapi/server-api README
 provider: AsyncAPI
 providerId: asyncapi
-created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-04'
-tags:
-  - Event-Driven
-  - Linux Foundation
-  - Messaging
-  - Standards
-  - Specification
-  - Rate Limiting
-  - Quotas
-  - Throttling
-description: Machine-readable rate limit definitions for the AsyncAPI API surface. Captures per-tier quotas,
-  burst behavior, response signaling, and recovery semantics. Defaults are scaffold values to be replaced
-  with published provider limits.
+note: >-
+  REPLACES a 2026-05-04 scaffold that asserted free/professional/enterprise tiers
+  with invented per-minute and per-month numbers. AsyncAPI publishes no rate
+  limits at all. Two live unauthenticated calls (GET /v1/help, POST /v1/validate)
+  both returned 200 and carried NO RateLimit-*, X-RateLimit-* or Retry-After
+  header — the full response header set was security headers, etag, cache-control
+  and Cloudflare/DigitalOcean routing headers. An honest zero is the finding: an
+  agent gets no runtime budget signal from this API and must treat throttling as
+  unannounced.
+limit_count: 0
+limits: []
 headers:
-  limit: X-RateLimit-Limit
-  remaining: X-RateLimit-Remaining
-  reset: X-RateLimit-Reset
-  retryAfter: Retry-After
-  policy: RateLimit-Policy
+  limit: null
+  remaining: null
+  reset: null
+  retryAfter: null
+  policy: null
+observed_headers:
+  - strict-transport-security
+  - content-security-policy
+  - etag
+  - cache-control
+  - x-content-type-options
+  - cf-ray
 responseCodes:
-  throttled: 429
-  quotaExceeded: 429
-  serviceUnavailable: 503
-limits:
-  - tier: free
-    name: Free Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 10
-    burst: 20
-    timeFrame: minute
-    applies:
-      - AsyncAPI Specification
-  - tier: free
-    name: Free Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 1000
-    timeFrame: month
-    applies:
-      - AsyncAPI Specification
-  - tier: professional
-    name: Professional Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 100
-    burst: 200
-    timeFrame: minute
-    applies:
-      - AsyncAPI Specification
-  - tier: professional
-    name: Professional Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 100000
-    timeFrame: month
-    applies:
-      - AsyncAPI Specification
-  - tier: enterprise
-    name: Enterprise Negotiated Limit
-    scope: contract
-    metric: requests_per_minute
-    limit: 1000
-    burst: 5000
-    timeFrame: minute
-    applies:
-      - AsyncAPI Specification
-policies:
-  - name: Backoff Strategy
-    description: Clients should implement exponential backoff with jitter, honoring the Retry-After header
-      when present.
-  - name: Burst Handling
-    description: Short bursts above the steady-state limit are tolerated up to the documented burst ceiling
-      before throttling engages.
-  - name: Quota Reset
-    description: Monthly quotas reset at the start of each calendar month in UTC. Per-minute and per-second
-      windows reset on a sliding-window basis.
-  - name: Fair Use
-    description: Even on uncapped enterprise tiers, sustained usage that materially impacts shared infrastructure
-      may be subject to fair-use throttling.
+  throttled: null
+  documented: false
+evidence:
+  - request: GET https://api.asyncapi.com/v1/help
+    http_status: 200
+    rate_limit_headers_present: false
+    observed: '2026-09-06'
+  - request: POST https://api.asyncapi.com/v1/validate
+    http_status: 200
+    rate_limit_headers_present: false
+    observed: '2026-09-06'
+  - url: https://www.asyncapi.com/docs
+    finding: no rate-limit or quota documentation for the hosted Server API
+    checked: '2026-09-06'
+upstream_protection:
+  note: >-
+    The service sits behind Cloudflare (server: cloudflare, cf-ray present), so
+    edge-level abuse protection almost certainly exists. It is not a published
+    contract and produced no headers on normal traffic, so it is recorded here
+    as context rather than as a limit.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

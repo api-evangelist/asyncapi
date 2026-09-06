@@ -1,13 +1,27 @@
-generated: '2026-07-11'
+generated: '2026-09-06'
 method: probed
 source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
 hosts:
 - host: www.asyncapi.com
   https: true
   tls_version: TLSv1.3
-  cert_expires: Oct  1 03:28:50 2026 GMT
+  cert_expires: Nov 30 02:36:31 2026 GMT
   hsts: true
   hsts_max_age: 31536000
+- host: api.asyncapi.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  8 09:23:08 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  hsts_include_subdomains: true
+  hsts_note: >-
+    The automated probe recorded null because api.asyncapi.com answers its own
+    root with a 404 (the app only routes /v1/*). A live GET of
+    https://api.asyncapi.com/v1/help on 2026-09-06 returned
+    `strict-transport-security: max-age=31536000; includeSubDomains`, along with
+    a full helmet header set (CSP, COOP, CORP, X-Content-Type-Options,
+    Referrer-Policy). Corrected by direct observation, not assumption.
 domains:
 - domain: asyncapi.com
   dnssec: false

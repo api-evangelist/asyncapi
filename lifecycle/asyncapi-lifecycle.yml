@@ -1,0 +1,73 @@
+generated: '2026-09-06'
+method: searched
+source: >-
+  https://api.asyncapi.com/v1/docs/openapi.yaml, https://github.com/asyncapi/spec/releases,
+  https://github.com/asyncapi/cli/releases, https://github.com/asyncapi/server-api
+versioning:
+  scheme: uri-path
+  current: v1
+  contract_version: 0.2.0
+  docs: https://api.asyncapi.com/v1/docs
+  detail: >-
+    The hosted service is pinned at https://api.asyncapi.com/v1. Only one version
+    has ever been served; there is no published policy for how a v2 would be
+    introduced or how long v1 would remain.
+spec_versioning:
+  scheme: semver
+  current: 3.1.0
+  released: '2026-01-31'
+  supported: ['2.x', '3.0.0', '3.1.0']
+  docs: https://www.asyncapi.com/docs/reference/specification/v3.1.0
+  detail: >-
+    The AsyncAPI SPECIFICATION versions independently of this API and is the
+    thing most consumers track. 3.0.0 shipped 2023-12-05, 3.1.0 on 2026-01-31.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  deprecation_header: false
+  detail: >-
+    No deprecation or sunset policy is published for the hosted API, and no
+    Sunset/Deprecation headers were returned on live responses probed 2026-09-06.
+    Deprecation IS practised in the tooling, and it is visible in release notes
+    rather than in a policy document — @asyncapi/cli v6.0.0 (2026-02-01) removed
+    Postman-to-AsyncAPI conversion as an announced breaking change. No
+    Deprecation pointer is emitted, because the provider publishes no policy.
+sla:
+  url: null
+  uptime_target: null
+  detail: >-
+    No SLA. This is a free community service run by a Linux Foundation project;
+    the deployment origin observed in response headers is DigitalOcean App
+    Platform behind Cloudflare.
+status_page: null
+status_page_probe:
+  - url: https://status.asyncapi.com
+    result: NXDOMAIN
+    checked: '2026-09-06'
+  - note: >-
+      No status page is linked from asyncapi.com, and no status subdomain
+      resolves. No StatusPage pointer is emitted.
+source_lifecycle:
+  - component: asyncapi/server-api (repository)
+    state: archived
+    detail: >-
+      "This repo has been archived as code is moved to
+      https://github.com/asyncapi/cli/tree/master/src/apps/api." The hosted
+      service continues; the standalone repo does not.
+    evidence: https://github.com/asyncapi/server-api
+  - component: '@asyncapi/server-api (npm)'
+    state: trailing
+    version: 0.16.23
+    published: '2025-11-19'
+    detail: >-
+      The self-hostable package's last release predates the deployed contract
+      version 0.2.0 (which adds /version, OpenAPI-to-AsyncAPI conversion and the
+      ValidateResponse body). Self-hosters are behind the hosted service.
+  - component: '@asyncapi/cli'
+    state: active
+    version: 6.0.2
+    published: '2026-06-07'
+release_cadence:
+  spec: irregular — 3.0.0 (2023-12-05), 3.1.0 (2026-01-31)
+  cli: frequent — 5.0.5 through 6.0.2 between 2026-01-08 and 2026-06-07
+deprecated_operations: []

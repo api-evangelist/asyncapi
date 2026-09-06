@@ -1,0 +1,287 @@
+generated: '2026-09-06'
+method: searched
+source: >-
+  registry.npmjs.org, proxy.golang.org, formulae.brew.sh and hub.docker.com,
+  cross-checked against the first-party https://github.com/asyncapi organization
+note: >-
+  Every package below is published from the AsyncAPI Initiative's own GitHub
+  organization (github.com/asyncapi) under the @asyncapi npm scope or the
+  github.com/asyncapi Go module path, so all are official: true. Third-party
+  libraries that carry "asyncapi" in the name (PyPI `asyncapi` by Diogo Dutra,
+  crates.io `asyncapi`, com.asyncapi Java bindings) are deliberately NOT listed
+  here: they are community work, not Initiative releases. `version` and
+  `published` were read from each registry's metadata endpoint on 2026-09-06.
+packages:
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/cli'
+    url: https://www.npmjs.com/package/@asyncapi/cli
+    install: npm install -g @asyncapi/cli
+    official: true
+    version: 6.0.2
+    published: '2026-06-07'
+    note: All-in-one CLI for the AsyncAPI toolchain; also the host of the Server API app.
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/parser'
+    url: https://www.npmjs.com/package/@asyncapi/parser
+    install: npm install @asyncapi/parser
+    official: true
+    version: 3.6.3
+    published: '2026-08-08'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/generator'
+    url: https://www.npmjs.com/package/@asyncapi/generator
+    install: npm install @asyncapi/generator
+    official: true
+    version: 3.4.0
+    published: '2026-08-05'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/modelina'
+    url: https://www.npmjs.com/package/@asyncapi/modelina
+    install: npm install @asyncapi/modelina
+    official: true
+    version: 5.10.1
+    published: '2025-10-19'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/specs'
+    url: https://www.npmjs.com/package/@asyncapi/specs
+    install: npm install @asyncapi/specs
+    official: true
+    version: 6.11.1
+    published: '2026-01-30'
+    note: The AsyncAPI JSON Schema documents for every published spec version.
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/converter'
+    url: https://www.npmjs.com/package/@asyncapi/converter
+    install: npm install @asyncapi/converter
+    official: true
+    version: 2.0.2
+    published: '2026-08-06'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/bundler'
+    url: https://www.npmjs.com/package/@asyncapi/bundler
+    install: npm install @asyncapi/bundler
+    official: true
+    version: 1.0.2
+    published: '2026-06-14'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/multi-parser'
+    url: https://www.npmjs.com/package/@asyncapi/multi-parser
+    install: npm install @asyncapi/multi-parser
+    official: true
+    version: 2.4.0
+    published: '2026-07-30'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/openapi-schema-parser'
+    url: https://www.npmjs.com/package/@asyncapi/openapi-schema-parser
+    install: npm install @asyncapi/openapi-schema-parser
+    official: true
+    version: 3.1.0
+    published: '2026-08-06'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/protobuf-schema-parser'
+    url: https://www.npmjs.com/package/@asyncapi/protobuf-schema-parser
+    install: npm install @asyncapi/protobuf-schema-parser
+    official: true
+    version: 3.9.0
+    published: '2026-08-21'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/avro-schema-parser'
+    url: https://www.npmjs.com/package/@asyncapi/avro-schema-parser
+    install: npm install @asyncapi/avro-schema-parser
+    official: true
+    version: 3.0.24
+    published: '2024-06-12'
+    note: Last release 2024-06-12 — the slowest-moving of the maintained parsers.
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/react-component'
+    url: https://www.npmjs.com/package/@asyncapi/react-component
+    install: npm install @asyncapi/react-component
+    official: true
+    version: 3.1.8
+    published: '2026-08-31'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/web-component'
+    url: https://www.npmjs.com/package/@asyncapi/web-component
+    install: npm install @asyncapi/web-component
+    official: true
+    version: 3.1.8
+    published: '2026-08-31'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/edavisualiser'
+    url: https://www.npmjs.com/package/@asyncapi/edavisualiser
+    install: npm install @asyncapi/edavisualiser
+    official: true
+    version: 1.2.0
+    published: '2022-11-15'
+    note: >-
+      Last published 2022-11-15. Still the Initiative's only EDA visualisation
+      library, but four years without a release is a real abandonment signal.
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/diff'
+    url: https://www.npmjs.com/package/@asyncapi/diff
+    install: npm install @asyncapi/diff
+    official: true
+    version: 0.5.0
+    published: '2024-12-15'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/optimizer'
+    url: https://www.npmjs.com/package/@asyncapi/optimizer
+    install: npm install @asyncapi/optimizer
+    official: true
+    version: 1.0.4
+    published: '2024-10-22'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/glee'
+    url: https://www.npmjs.com/package/@asyncapi/glee
+    install: npm install @asyncapi/glee
+    official: true
+    version: 0.37.9
+    published: '2024-10-14'
+    note: Spec-first event-driven application framework.
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/server-api'
+    url: https://www.npmjs.com/package/@asyncapi/server-api
+    install: npm install @asyncapi/server-api
+    official: true
+    version: 0.16.23
+    published: '2025-11-19'
+    note: >-
+      The self-hostable build of the API served at https://api.asyncapi.com/v1.
+      The source repo (asyncapi/server-api) is archived; development moved into
+      asyncapi/cli, so this package trails the deployed service.
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/html-template'
+    url: https://www.npmjs.com/package/@asyncapi/html-template
+    install: npm install @asyncapi/html-template
+    official: true
+    version: 3.5.6
+    published: '2026-03-14'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/markdown-template'
+    url: https://www.npmjs.com/package/@asyncapi/markdown-template
+    install: npm install @asyncapi/markdown-template
+    official: true
+    version: 2.0.0
+    published: '2025-12-17'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/nodejs-template'
+    url: https://www.npmjs.com/package/@asyncapi/nodejs-template
+    install: npm install @asyncapi/nodejs-template
+    official: true
+    version: 3.0.4
+    published: '2024-09-11'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/java-spring-template'
+    url: https://www.npmjs.com/package/@asyncapi/java-spring-template
+    install: npm install @asyncapi/java-spring-template
+    official: true
+    version: 1.6.0
+    published: '2024-11-26'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/dotnet-nats-template'
+    url: https://www.npmjs.com/package/@asyncapi/dotnet-nats-template
+    install: npm install @asyncapi/dotnet-nats-template
+    official: true
+    version: 0.12.1
+    published: '2023-09-13'
+  - language: javascript
+    registry: npm
+    name: '@asyncapi/python-paho-template'
+    url: https://www.npmjs.com/package/@asyncapi/python-paho-template
+    install: npm install @asyncapi/python-paho-template
+    official: true
+    version: 0.2.13
+    published: '2022-05-24'
+    note: Last release 2022-05-24 — effectively unmaintained.
+  - language: go
+    registry: go
+    name: github.com/asyncapi/parser-go
+    url: https://pkg.go.dev/github.com/asyncapi/parser-go
+    install: go get github.com/asyncapi/parser-go
+    official: true
+    version: v0.5.0
+    published: '2023-08-25'
+  - language: go
+    registry: go
+    name: github.com/asyncapi/converter-go
+    url: https://pkg.go.dev/github.com/asyncapi/converter-go
+    install: go get github.com/asyncapi/converter-go
+    official: true
+    version: v0.3.0
+    published: '2020-03-25'
+    note: Last module version 2020-03-25.
+  - language: go
+    registry: go
+    name: github.com/asyncapi/event-gateway
+    url: https://pkg.go.dev/github.com/asyncapi/event-gateway
+    install: go get github.com/asyncapi/event-gateway
+    official: true
+    version: v0.2.0
+    published: '2022-06-10'
+  - language: go
+    registry: go
+    name: github.com/asyncapi/go-watermill-template
+    url: https://pkg.go.dev/github.com/asyncapi/go-watermill-template
+    install: go get github.com/asyncapi/go-watermill-template
+    official: true
+    version: v0.2.75
+    published: '2024-04-23'
+  - language: shell
+    registry: homebrew
+    name: asyncapi
+    url: https://formulae.brew.sh/formula/asyncapi
+    install: brew install asyncapi
+    official: true
+    version: 6.0.2
+    published: null
+    note: >-
+      Homebrew tracks @asyncapi/cli 6.0.2. Homebrew's formula API reports the
+      version but no publish date, so `published` is null by observation, not
+      omission.
+  - language: docker
+    registry: dockerhub
+    name: asyncapi/cli
+    url: https://hub.docker.com/r/asyncapi/cli
+    install: docker run --rm asyncapi/cli
+    official: true
+    version: null
+    published: null
+    note: >-
+      274 tags published under the asyncapi org on Docker Hub, including a
+      floating `latest`. Tag list was read but no single "current" version is
+      declared by the registry, so version stays null rather than guessed.
+absent:
+  - registry: pypi
+    checked: '2026-09-06'
+    finding: >-
+      No first-party AsyncAPI Initiative package. PyPI `asyncapi` (0.14.1) is
+      Diogo Dutra's independent project and `asyncapi-python` is unaffiliated.
+  - registry: maven
+    checked: '2026-09-06'
+    finding: No com.asyncapi group artifacts published by the Initiative.
+  - registry: crates.io
+    checked: '2026-09-06'
+    finding: crates.io `asyncapi` (0.2.0, 2022) is a community crate, not first-party.

@@ -1,0 +1,59 @@
+generated: '2026-09-06'
+method: searched
+source: >-
+  https://github.com/asyncapi/asyncapi-react, registry.npmjs.org, and
+  https://studio.asyncapi.com
+note: >-
+  These are client-side rendering components, not server SDKs — they take an
+  AsyncAPI document and render it in a page. Distinct from packages/, which
+  catalogues the toolchain libraries.
+families:
+  - name: AsyncAPI React
+    description: >-
+      The reference renderer for AsyncAPI documents. Everything the project
+      embeds — Studio, the docs site, generated HTML output — renders through
+      this component or its web-component wrapper.
+    repository: https://github.com/asyncapi/asyncapi-react
+    components:
+      - name: '@asyncapi/react-component'
+        kind: react-component
+        registry: npm
+        url: https://www.npmjs.com/package/@asyncapi/react-component
+        version: 3.1.8
+        published: '2026-08-31'
+        install: npm install @asyncapi/react-component
+        official: true
+      - name: '@asyncapi/web-component'
+        kind: web-component
+        registry: npm
+        url: https://www.npmjs.com/package/@asyncapi/web-component
+        version: 3.1.8
+        published: '2026-08-31'
+        install: npm install @asyncapi/web-component
+        official: true
+        note: >-
+          Custom element wrapper around the React component; usable from any
+          framework or from plain HTML.
+  - name: EDA Visualiser
+    description: React Flow based visualisation of event-driven architectures.
+    repository: https://github.com/asyncapi/edavisualiser
+    components:
+      - name: '@asyncapi/edavisualiser'
+        kind: react-component
+        registry: npm
+        url: https://www.npmjs.com/package/@asyncapi/edavisualiser
+        version: 1.2.0
+        published: '2022-11-15'
+        install: npm install @asyncapi/edavisualiser
+        official: true
+        note: Last published 2022-11-15 — the least current component in the set.
+hosted_surfaces:
+  - name: AsyncAPI Studio
+    url: https://studio.asyncapi.com
+    kind: hosted-editor
+    detail: Hosted editor/visualiser built on the React component; no signup.
+loaders:
+  - >-
+    The web component ships a browser bundle usable via a script tag; the React
+    component is consumed through a bundler. Both require a stylesheet import —
+    see the asyncapi-react README for the exact path per version.

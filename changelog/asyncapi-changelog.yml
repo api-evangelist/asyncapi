@@ -1,0 +1,84 @@
+generated: '2026-09-06'
+method: searched
+source: >-
+  https://github.com/asyncapi/spec/releases and https://github.com/asyncapi/cli/releases,
+  read via the GitHub releases API on 2026-09-06
+note: >-
+  AsyncAPI publishes no single dated changelog page — asyncapi.com/changelog is a
+  404. The real change record is GitHub releases per repository, plus narrative
+  release-note posts on the blog for spec minors. Two streams matter to a
+  consumer and they version independently: the SPECIFICATION and the CLI (which
+  now also carries the hosted Server API). Recent window only.
+scheme: semver
+streams:
+  - name: AsyncAPI Specification
+    repository: https://github.com/asyncapi/spec
+    releases: https://github.com/asyncapi/spec/releases
+    current: 3.1.0
+    current_released: '2026-01-31'
+  - name: AsyncAPI CLI (hosts the Server API app)
+    repository: https://github.com/asyncapi/cli
+    releases: https://github.com/asyncapi/cli/releases
+    current: 6.0.2
+    current_released: '2026-06-07'
+  - name: AsyncAPI Server API (deployed contract)
+    url: https://api.asyncapi.com/v1/docs/openapi.yaml
+    current: 0.2.0
+    note: >-
+      The deployed OpenAPI declares info.version 0.2.0 and is not tagged or
+      released anywhere consumers can subscribe to.
+entries:
+  - stream: spec
+    version: 3.1.0
+    date: '2026-01-31'
+    breaking: false
+    additions:
+      - ROS 2 bindings added to the official specification (spec#1109)
+    release_notes: https://www.asyncapi.com/blog/release-notes-3.1.0
+  - stream: spec
+    version: 3.0.0
+    date: '2023-12-05'
+    breaking: true
+    highlights:
+      - The 3.x major line — operations separated from channels, reusable components reworked.
+  - stream: cli
+    version: 6.0.2
+    date: '2026-06-07'
+    breaking: false
+    highlights:
+      - Skip request-body validation gracefully instead of throwing on unsupported paths.
+  - stream: cli
+    version: 6.0.1
+    date: '2026-06-06'
+    breaking: false
+    highlights:
+      - Fix GitHub URL parsing for branches containing slashes; fix multi-dot filename detection.
+  - stream: cli
+    version: 6.0.0
+    date: '2026-02-01'
+    breaking: true
+    highlights:
+      - Postman-to-AsyncAPI conversion removed (unmaintained dependencies).
+  - stream: cli
+    version: 5.0.7
+    date: '2026-01-31'
+    breaking: false
+    highlights:
+      - Bump @asyncapi/generator 3.1.0 to 3.1.1.
+  - stream: cli
+    version: 5.0.6
+    date: '2026-01-16'
+    breaking: false
+    highlights:
+      - Bump @asyncapi/generator 3.0.1 to 3.1.0.
+  - stream: cli
+    version: 5.0.1
+    date: '2026-01-03'
+    breaking: true
+    highlights:
+      - Removed support for AsyncAPI Generator v1 and v2; the CLI now uses Generator v3 exclusively.
+gaps:
+  - >-
+    No consolidated changelog page and no RSS/Atom feed of releases the way a
+    commercial provider would publish one. A consumer tracking the API surface
+    has to watch three repositories and the deployed OpenAPI separately.

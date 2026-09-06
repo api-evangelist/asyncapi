@@ -1,0 +1,49 @@
+generated: '2026-09-06'
+method: searched
+source: >-
+  https://studio.asyncapi.com, https://api.asyncapi.com/v1/docs,
+  https://www.asyncapi.com/docs/tools/cli/usage
+note: >-
+  There is no test-vs-live separation to capture, because there is no live/paid
+  mode: the production API is itself free, keyless and side-effect free, so every
+  call is already a safe rehearsal. What AsyncAPI does publish is a hosted
+  console and a local one, which is what the console_or_sandbox check is actually
+  asking about. No test credentials, cards or magic values exist to record, and
+  none were invented.
+test_live_separation:
+  exists: false
+  detail: One environment, no keys, no modes. See authentication/asyncapi-authentication.yml
+surfaces:
+  - name: AsyncAPI Studio (hosted)
+    kind: console
+    url: https://studio.asyncapi.com
+    auth: none
+    http_status: 200
+    checked: '2026-09-06'
+    detail: >-
+      Browser editor and visualiser for AsyncAPI documents with live validation,
+      template preview and conversion. Nothing to install and nothing to sign up for.
+  - name: AsyncAPI Studio (local)
+    kind: console
+    install: asyncapi start studio [SPEC-FILE]
+    detail: Runs the same Studio locally against a file on disk.
+  - name: Studio preview (minimal)
+    kind: console
+    install: asyncapi start preview SPEC-FILE
+  - name: Server API interactive reference
+    kind: reference
+    url: https://api.asyncapi.com/v1/docs
+    detail: Redoc rendering of the live OpenAPI at /v1/docs/openapi.yaml.
+  - name: Self-hosted Server API
+    kind: sandbox
+    install: docker run -it -p 80:80 asyncapi/server-api
+    package: https://www.npmjs.com/package/@asyncapi/server-api
+    detail: >-
+      Run the whole API locally when you do not want to send documents to a
+      third-party host. This is the closest thing to a sandbox the project ships,
+      and it is the FULL service, not a reduced one.
+fixtures:
+  published: false
+  detail: >-
+    No fixture or trigger tooling. The nearest equivalent is `asyncapi new file`,
+    which scaffolds a valid starter AsyncAPI document to submit.

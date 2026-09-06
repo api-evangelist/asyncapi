@@ -1,0 +1,94 @@
+generated: '2026-09-06'
+method: derived
+source: >-
+  openapi/asyncapi-server-api-openapi.yml, harvested 2026-09-06 from
+  https://api.asyncapi.com/v1/docs/openapi.yaml; corroborated by
+  https://github.com/asyncapi/spec-json-schemas
+note: >-
+  AsyncAPI is unusual in this catalog: it does not merely conform to a domain
+  standard, it publishes one. The Server API's own contract binds its request
+  bodies directly to the AsyncAPI JSON Schema documents, which is the strongest
+  possible in-contract declaration of the standard for this market.
+standards:
+  - id: asyncapi-3.0
+    conforms: true
+    domain_standard: true
+    evidence: >-
+      components.schemas.AsyncAPIDocument declares
+      $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/3.0.0.json
+      in openapi/asyncapi-server-api-openapi.yml — the contract validates payloads
+      against the AsyncAPI 3.0.0 JSON Schema itself, not a local copy.
+  - id: asyncapi-3.1
+    conforms: true
+    domain_standard: true
+    evidence: >-
+      components.schemas.AsyncAPIDocument also $refs
+      https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/3.1.0.json;
+      components.schemas.SpecVersions enumerates '3.0.0' and '3.1.0' as convert targets.
+      AsyncAPI 3.1.0 was released 2026-01-31 (github.com/asyncapi/spec releases).
+  - id: asyncapi-2.x
+    conforms: true
+    evidence: >-
+      The convert operation accepts 2.x documents and targets the SpecVersions
+      enum; @asyncapi/converter 2.0.2 ships the 2.x-to-3.x conversion path.
+  - id: openapi-3.1
+    conforms: true
+    evidence: >-
+      The Server API's own contract is `openapi: 3.1.0`
+      (openapi/asyncapi-server-api-openapi.yml line 1).
+  - id: openapi-3.0
+    conforms: true
+    evidence: >-
+      components.schemas.OpenAPIDocument $refs
+      https://spec.openapis.org/oas/3.0/schema/2024-10-18 — the convert operation
+      ingests OpenAPI 3.0 documents and emits AsyncAPI.
+  - id: json-schema-2020-12
+    conforms: true
+    evidence: >-
+      AsyncAPI 3.x schema objects are JSON Schema 2020-12; the published
+      spec-json-schemas documents are JSON Schema, and @asyncapi/parser resolves
+      them. Also implied by openapi 3.1.0, which uses JSON Schema 2020-12.
+  - id: rfc7807-problem-details
+    conforms: partial
+    evidence: >-
+      components.schemas.Problem carries exactly the RFC 7807 members
+      (type/title/status/detail/instance, additionalProperties true, type+title+status
+      required) but every response declares media type application/json rather than
+      application/problem+json.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: >-
+      Same schema as above; RFC 9457 conformance requires the
+      application/problem+json media type, which this API does not emit.
+  - id: avro
+    conforms: true
+    evidence: >-
+      First-party @asyncapi/avro-schema-parser 3.0.24 lets AsyncAPI documents carry
+      Avro 1.x message payload schemas.
+  - id: protobuf
+    conforms: true
+    evidence: >-
+      First-party @asyncapi/protobuf-schema-parser 3.9.0 (2026-08-21) lets AsyncAPI
+      documents carry Protocol Buffers payload schemas.
+  - id: cloudevents
+    conforms: unknown
+    evidence: >-
+      Not declared anywhere in the Server API contract. AsyncAPI documents can
+      describe CloudEvents payloads, but the Initiative publishes no conformance
+      claim, so this is recorded as unknown rather than asserted.
+  - id: oauth2
+    conforms: false
+    evidence: No securitySchemes of any kind in the contract; the API is keyless.
+  - id: oidc
+    conforms: false
+    evidence: No OIDC discovery document on any host (see well-known/asyncapi-well-known.yml).
+  - id: rfc8594-sunset
+    conforms: false
+    evidence: No Sunset or Deprecation headers observed on live responses 2026-09-06.
+compliance_program:
+  published: false
+  note: >-
+    No SOC 2, ISO 27001, PCI or similar certification is published. AsyncAPI is a
+    Linux Foundation project under LF Projects, LLC; its governing policies are
+    the LF Projects policies at https://lfprojects.org/policies/ rather than a
+    vendor trust program. No Compliance pointer is emitted.

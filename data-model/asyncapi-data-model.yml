@@ -1,0 +1,76 @@
+generated: '2026-09-06'
+method: derived
+source: openapi/asyncapi-server-api-openapi.yml
+note: >-
+  This is not a CRUD data model and should not be read as one. The AsyncAPI
+  Server API has no persistent entities, no identifiers and no id-reference
+  fields — the entity graph is a composition graph of request and response
+  envelopes around ONE central document type. AsyncAPIDocument is the hub:
+  every request except /help and /version embeds it, and every response except
+  the diagnostics-only ones returns a transformed copy of it. There are no
+  has_many/belongs_to relationships to derive because nothing is stored, so
+  relationships[] records the real `embeds` / `returns` edges instead of
+  inventing ownership.
+entities:
+  - name: AsyncAPIDocument
+    role: hub
+    identifier: none
+    detail: >-
+      An AsyncAPI document supplied as an object, a string or a URL. Validated
+      against the published AsyncAPI JSON Schemas for 2.0.0 through 3.1.0 by
+      remote $ref — the contract binds to the standard itself.
+  - name: AsyncAPIDocuments
+    role: collection
+    detail: An array of AsyncAPIDocument, used only by /bundle.
+  - name: OpenAPIDocument
+    role: hub
+    detail: >-
+      An OpenAPI 3.0 document ($ref to spec.openapis.org), accepted by /convert
+      as a conversion SOURCE. This is the cross-standard bridge in the model.
+  - name: SpecVersions
+    role: enum
+    values: ['2.x', '3.0.0', '3.1.0']
+    detail: Conversion target versions; default `latest`.
+  - name: Problem
+    role: error-envelope
+    detail: RFC 7807-shaped error body shared by every operation.
+  - name: VersionResponse
+    role: metadata
+    detail: >-
+      Service metadata — CLI version, node runtime, platform, uptime, start time,
+      repository URLs, licence and an api.health enum of ok/degraded/error. The
+      only operation that reports anything about the server itself.
+  - name: HelpListResponse
+    role: discovery
+    detail: Array of {command, url} — the API's own capability index.
+  - name: HelpCommandResponse
+    role: discovery
+    detail: Per-command detail — command, method, summary, requestBody shape.
+envelopes:
+  - {request: ValidateRequest, response: ValidateResponse, operation: validate}
+  - {request: ParseRequest, response: ParseResponse, operation: parse}
+  - {request: GenerateRequest, response: GenerateResponse, operation: generate}
+  - {request: ConvertRequest, response: ConvertResponse, operation: convert}
+  - {request: BundleRequest, response: BundleResponse, operation: bundle}
+  - {request: DiffRequest, response: DiffResponse, operation: diff}
+relationships:
+  - {from: ValidateRequest, to: AsyncAPIDocument, kind: embeds, via: asyncapi}
+  - {from: ValidateResponse, to: AsyncAPIDocument, kind: returns, via: asyncapi}
+  - {from: ParseRequest, to: AsyncAPIDocument, kind: embeds, via: asyncapi}
+  - {from: GenerateRequest, to: AsyncAPIDocument, kind: embeds, via: asyncapi}
+  - {from: ConvertRequest, to: AsyncAPIDocument, kind: embeds, via: source}
+  - {from: ConvertRequest, to: OpenAPIDocument, kind: embeds, via: source}
+  - {from: ConvertRequest, to: SpecVersions, kind: constrained_by, via: target-version}
+  - {from: ConvertResponse, to: AsyncAPIDocument, kind: returns, via: converted}
+  - {from: BundleRequest, to: AsyncAPIDocuments, kind: embeds, via: asyncapis}
+  - {from: BundleRequest, to: AsyncAPIDocument, kind: embeds, via: base}
+  - {from: BundleResponse, to: AsyncAPIDocument, kind: returns, via: bundled}
+  - {from: DiffRequest, to: AsyncAPIDocument, kind: embeds, via: asyncapis}
+  - {from: AsyncAPIDocuments, to: AsyncAPIDocument, kind: contains, via: items}
+external_schema_bindings:
+  - urn: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/3.1.0.json
+    bound_to: AsyncAPIDocument
+  - urn: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/3.0.0.json
+    bound_to: AsyncAPIDocument
+  - urn: https://spec.openapis.org/oas/3.0/schema/2024-10-18
+    bound_to: OpenAPIDocument

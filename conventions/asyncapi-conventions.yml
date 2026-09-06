@@ -1,0 +1,99 @@
+generated: '2026-09-06'
+method: derived
+source: >-
+  openapi/asyncapi-server-api-openapi.yml (harvested 2026-09-06 from
+  https://api.asyncapi.com/v1/docs/openapi.yaml) plus live probes of
+  https://api.asyncapi.com/v1
+note: >-
+  The AsyncAPI Server API is a stateless transformation service: every operation
+  takes an AsyncAPI (or OpenAPI) document in the request body and returns a
+  derived document, diagnostics or metadata. Nothing is stored, nothing is
+  addressable afterwards, and there are no resources to list, page, expand or
+  delete. That shape decides most of the answers below.
+authentication:
+  style: none
+  detail: No securitySchemes; anonymous calls succeed. See authentication/asyncapi-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v1
+  base_url: https://api.asyncapi.com/v1
+  contract_version: 0.2.0
+  detail: >-
+    The service is pinned at /v1 in the path while the OpenAPI document itself
+    carries info.version 0.2.0. The AsyncAPI SPEC versions the API operates on
+    (2.x, 3.0.0, 3.1.0) are request parameters, not API versions.
+media_types:
+  request: application/json
+  response: application/json
+  problem: application/json
+  detail: >-
+    Problem bodies are RFC 7807-shaped but returned as application/json rather
+    than application/problem+json.
+error_envelope:
+  schema: Problem
+  reference: errors/asyncapi-problem-types.yml
+  fields: [type, title, status, detail, instance]
+pagination:
+  style: none
+  detail: >-
+    No collection endpoints exist. GET /v1/help returns the complete command list
+    in one unpaged array (7 entries observed 2026-09-06).
+field_expansion:
+  supported: false
+metadata:
+  supported: false
+request_tracing:
+  request_id_header: none
+  detail: >-
+    No X-Request-Id / Request-Id / traceparent was returned on any observed
+    response. The only correlatable identifiers are the upstream `etag` and
+    Cloudflare's `cf-ray`, neither of which is a documented API contract.
+rate_limit_signaling:
+  headers: []
+  status_on_exhaustion: null
+  detail: >-
+    No RateLimit-* or X-RateLimit-* headers were present on the observed 200s and
+    no limits are documented. See rate-limits/asyncapi-rate-limits.yml
+idempotency:
+  coverage: none
+  header: null
+  scope: null
+  retention: null
+  detail: >-
+    There is no Idempotency-Key mechanism and no replay-protection contract. The
+    honest mitigation is structural rather than contractual: all seven write-shaped
+    operations (POST /validate, /parse, /generate, /convert, /bundle, /diff and
+    GET /help, /version) are pure functions over the submitted document — they
+    create no server-side state, so a replayed request produces the same response
+    and costs nothing but compute. That makes retries SAFE, but it is not an
+    idempotency contract the provider publishes, so coverage is `none` and no
+    Idempotency pointer is emitted.
+reversibility:
+  grade: na
+  detail: >-
+    Nothing to reverse. No operation persists state on the AsyncAPI Server API —
+    the response body IS the entire effect, and discarding it is the undo. There
+    is no cancel/refund/void/restore surface because there is no record to act on.
+  write_surfaces: []
+dry_run_mode:
+  supported: na
+  detail: >-
+    Not applicable for the same reason as reversibility. POST /validate and
+    POST /diff are themselves the rehearsal tools an agent would want: they
+    report what a document is and how two documents differ without changing
+    anything anywhere.
+observed_drift:
+  - operation: validate
+    contract: 'responses: 204 (no body) on a valid document'
+    deployed: >-
+      HTTP 200 with a ValidateResponse body carrying status, asyncapi,
+      diagnostics and score. Observed 2026-09-06 against a valid 3.0.0 document.
+    impact: >-
+      An agent coded to the published 204 will not read the diagnostics and score
+      the service actually returns. Recorded as measured drift, not corrected in
+      the harvested spec.
+cross_links:
+  errors: errors/asyncapi-problem-types.yml
+  authentication: authentication/asyncapi-authentication.yml
+  lifecycle: lifecycle/asyncapi-lifecycle.yml
+  rate_limits: rate-limits/asyncapi-rate-limits.yml

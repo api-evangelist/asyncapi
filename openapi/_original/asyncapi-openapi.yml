@@ -18,8 +18,10 @@ info:
     name: Apache-2.0
     url: https://www.apache.org/licenses/LICENSE-2.0
 servers:
+  - url: https://api.asyncapi.com/v1
+    description: Public hosted AsyncAPI Server API operated by the AsyncAPI Initiative
   - url: http://localhost
-    description: Self-hosted AsyncAPI Server API
+    description: Self-hosted AsyncAPI Server API (Docker / npm)
 tags:
   - name: Validate
   - name: Parse

@@ -1,0 +1,76 @@
+generated: '2026-09-06'
+method: probed
+source: live GET of the named /.well-known/ path list on every host this record knows
+note: >-
+  Every named path in the pipeline's closed list was probed on all four hosts the
+  record knows (the registrable domain, www, the API host and the Studio host).
+  Nothing was served. www.asyncapi.com and studio.asyncapi.com return the site's
+  Next.js 404 page for every path (39,995 and ~16,180 bytes of HTML — a rendered
+  404, not a document); api.asyncapi.com returns the Express "Cannot GET" 404.
+  A negative-control path that cannot exist returned 404 on all four hosts, so no
+  host echoes paths and none of the misses are false negatives.
+  hit_count is 0, so NO WellKnown and NO SecurityTxt pointer is emitted — this
+  file records a measured absence, not a surface.
+hit_count: 0
+path_echo_control: passed
+hosts:
+  - host: https://www.asyncapi.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/oauth-protected-resource, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/apis.json, status: 404}
+      - {path: /apis.json, status: 404}
+      - {path: /apis.yml, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /.well-known/aauth-resource.json, status: 404}
+      - {path: /.well-known/asyncapi-negative-control-7f3ab91c.json, status: 404, control: true}
+  - host: https://asyncapi.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/oauth-protected-resource, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/apis.json, status: 404}
+      - {path: /apis.json, status: 404}
+      - {path: /apis.yml, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /.well-known/aauth-resource.json, status: 404}
+      - {path: /.well-known/asyncapi-negative-control-7f3ab91c.json, status: 404, control: true}
+  - host: https://api.asyncapi.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/oauth-protected-resource, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/apis.json, status: 404}
+      - {path: /apis.json, status: 404}
+      - {path: /apis.yml, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /.well-known/aauth-resource.json, status: 404}
+      - {path: /.well-known/asyncapi-negative-control-7f3ab91c.json, status: 404, control: true}
+  - host: https://studio.asyncapi.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/oauth-protected-resource, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/apis.json, status: 404}
+      - {path: /apis.json, status: 404}
+      - {path: /apis.yml, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+      - {path: /.well-known/aauth-resource.json, status: 404}
+      - {path: /.well-known/asyncapi-negative-control-7f3ab91c.json, status: 404, control: true}

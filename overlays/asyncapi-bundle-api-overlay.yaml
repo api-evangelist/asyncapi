@@ -1,0 +1,30 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for AsyncAPI Server Bundle API
+  version: 1.0.0
+extends: openapi/asyncapi-bundle-api-openapi.yml
+x-generated: '2026-09-06'
+x-method: generated
+x-source: >-
+  Derived from openapi/asyncapi-bundle-api-openapi.yml; enhancements reflect artifacts in this repository
+  (authentication/, conventions/, errors/, lifecycle/, rate-limits/) and the live
+  probe of https://api.asyncapi.com/v1 on 2026-09-06. The original spec is never mutated.
+actions:
+  - target: $.info
+    update:
+      x-apievangelist-provider: asyncapi
+      x-apievangelist-profile: https://apis.io/provider/asyncapi/
+      x-api-base-url: https://api.asyncapi.com/v1
+      x-authentication: none
+      x-authentication-note: >-
+        No securitySchemes are declared and none are required; an anonymous call
+        returned HTTP 200 on 2026-09-06.
+      x-idempotency-coverage: none
+      x-idempotency-note: >-
+        No Idempotency-Key mechanism. Operations are pure functions over the
+        submitted document and persist no state, so replay is safe but is not a
+        published contract.
+      x-reversibility: na
+      x-rate-limits: undocumented — no RateLimit-* headers observed on live 200s
+      x-error-envelope: RFC 7807-shaped Problem schema served as application/json
+      x-self-host: 'docker run -it -p 80:80 asyncapi/server-api'

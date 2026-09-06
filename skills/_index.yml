@@ -1,0 +1,28 @@
+generated: '2026-09-06'
+method: generated
+source: openapi/asyncapi-server-api-openapi.yml
+note: >-
+  Every operationId referenced below was verified present in the harvested live
+  OpenAPI at https://api.asyncapi.com/v1/docs/openapi.yaml. AsyncAPI publishes no
+  AGENTS.md or skill files of its own — searched 2026-09-06.
+skills:
+  - file: asyncapi-validate-a-document.md
+    name: Validate an AsyncAPI document
+    api: openapi/asyncapi-server-api-openapi.yml
+    operations: [validate, parse]
+  - file: asyncapi-upgrade-a-document.md
+    name: Upgrade an AsyncAPI document to the current spec version
+    api: openapi/asyncapi-server-api-openapi.yml
+    operations: [convert, validate, diff]
+  - file: asyncapi-bundle-and-generate.md
+    name: Bundle AsyncAPI documents and generate output
+    api: openapi/asyncapi-server-api-openapi.yml
+    operations: [bundle, generate, validate]
+  - file: asyncapi-detect-breaking-changes.md
+    name: Detect breaking changes between two AsyncAPI documents
+    api: openapi/asyncapi-server-api-openapi.yml
+    operations: [diff, validate]
+  - file: asyncapi-discover-the-api.md
+    name: Discover what the AsyncAPI Server API exposes
+    api: openapi/asyncapi-server-api-openapi.yml
+    operations: [help, getVersion]

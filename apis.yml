@@ -10,28 +10,40 @@ description: >-
   asynchronous messaging interfaces, similar to how OpenAPI serves REST APIs.
 type: Index
 deliveryModel:
-  model: unknown
-  open_source: false
+  model: open-source
+  open_source: true
   commercial: false
-  callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  callable_host: true
+  label: Open source (Apache-2.0) with a free hosted API
+  confidence: high
   source:
   - openapi
-  generated: '2026-08-28'
-  method: derived
+  - packages
+  - plans
+  note: >-
+    The specification and every first-party tool are Apache-2.0 under the Linux
+    Foundation, and the AsyncAPI Server API is callable at
+    https://api.asyncapi.com/v1 — verified by an anonymous HTTP 200 on 2026-09-06.
+    There is no commercial offering of any kind.
+  generated: '2026-09-06'
+  method: probed
 accessModel:
-  pricing: freemium
-  onboarding: unknown
+  pricing: free
+  onboarding: none
   trial: false
-  try_now: false
-  public: false
-  label: Freemium
-  confidence: medium
+  try_now: true
+  public: true
+  label: Free and keyless — no account required
+  confidence: high
   source:
   - plans
-  generated: '2026-07-22'
-  method: derived
+  - authentication
+  note: >-
+    No pricing page, no plans, no signup and no API key. An anonymous POST to
+    https://api.asyncapi.com/v1/validate returned HTTP 200 on 2026-09-06, and
+    AsyncAPI Studio at https://studio.asyncapi.com is usable without an account.
+  generated: '2026-09-06'
+  method: probed
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/asyncapi.png
 tags:
   - Event-Driven
@@ -42,7 +54,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/asyncapi/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-04-19'
+modified: '2026-09-06'
 specificationVersion: '0.23'
 apis:
 - aid: asyncapi:asyncapi-spec
@@ -65,10 +77,42 @@ apis:
     url: https://www.asyncapi.com/docs/tutorials/getting-started
   - type: AsyncAPI
     url: https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md
+- aid: asyncapi:asyncapi-server-api
+  name: AsyncAPI Server API
+  description: >-
+    The AsyncAPI Server API is the only callable HTTP API the AsyncAPI Initiative
+    operates. It exposes the official AsyncAPI toolchain — validate, parse,
+    convert, generate, bundle and diff — over HTTP at https://api.asyncapi.com/v1,
+    free, keyless and without signup. It is stateless: every operation takes an
+    AsyncAPI (or OpenAPI 3.0) document in the request body and returns a derived
+    document, diagnostics or service metadata. The same service is self-hostable
+    via Docker or `asyncapi start api`.
+  humanURL: https://api.asyncapi.com/v1/docs
+  baseURL: https://api.asyncapi.com/v1
+  tags:
+  - Event-Driven
+  - Specification
+  - Tooling
+  - Validation
+  - Code Generation
+  properties:
+  - type: OpenAPI
+    url: openapi/asyncapi-server-api-openapi.yml
+  - type: APIReference
+    url: https://api.asyncapi.com/v1/docs
+  - type: Overlay
+    url: overlays/asyncapi-server-api-overlay.yaml
+  - type: ErrorCatalog
+    url: errors/asyncapi-problem-types.yml
+  - type: DataModel
+    url: data-model/asyncapi-data-model.yml
+  - type: SourceCode
+    url: https://github.com/asyncapi/cli/tree/master/src/apps/api
 - aid: asyncapi:asyncapi-bundle-api
   name: AsyncAPI Bundle API
   description: The Bundle API from AsyncAPI — 1 operation(s) for bundle.
-  humanURL: https://www.asyncapi.com/docs
+  humanURL: https://api.asyncapi.com/v1/docs
+  baseURL: https://api.asyncapi.com/v1
   tags:
   - Bundle
   properties:
@@ -77,7 +121,8 @@ apis:
 - aid: asyncapi:asyncapi-convert-api
   name: AsyncAPI Convert API
   description: The Convert API from AsyncAPI — 1 operation(s) for convert.
-  humanURL: https://www.asyncapi.com/docs
+  humanURL: https://api.asyncapi.com/v1/docs
+  baseURL: https://api.asyncapi.com/v1
   tags:
   - Convert
   properties:
@@ -86,7 +131,8 @@ apis:
 - aid: asyncapi:asyncapi-diff-api
   name: AsyncAPI Diff API
   description: The Diff API from AsyncAPI — 1 operation(s) for diff.
-  humanURL: https://www.asyncapi.com/docs
+  humanURL: https://api.asyncapi.com/v1/docs
+  baseURL: https://api.asyncapi.com/v1
   tags:
   - Diff
   properties:
@@ -95,7 +141,8 @@ apis:
 - aid: asyncapi:asyncapi-generate-api
   name: AsyncAPI Generate API
   description: The Generate API from AsyncAPI — 1 operation(s) for generate.
-  humanURL: https://www.asyncapi.com/docs
+  humanURL: https://api.asyncapi.com/v1/docs
+  baseURL: https://api.asyncapi.com/v1
   tags:
   - Generate
   properties:
@@ -104,7 +151,8 @@ apis:
 - aid: asyncapi:asyncapi-help-api
   name: AsyncAPI Help API
   description: The Help API from AsyncAPI — 1 operation(s) for help.
-  humanURL: https://www.asyncapi.com/docs
+  humanURL: https://api.asyncapi.com/v1/docs
+  baseURL: https://api.asyncapi.com/v1
   tags:
   - Help
   properties:
@@ -113,7 +161,8 @@ apis:
 - aid: asyncapi:asyncapi-parse-api
   name: AsyncAPI Parse API
   description: The Parse API from AsyncAPI — 1 operation(s) for parse.
-  humanURL: https://www.asyncapi.com/docs
+  humanURL: https://api.asyncapi.com/v1/docs
+  baseURL: https://api.asyncapi.com/v1
   tags:
   - Parse
   properties:
@@ -122,13 +171,16 @@ apis:
 - aid: asyncapi:asyncapi-validate-api
   name: AsyncAPI Validate API
   description: The Validate API from AsyncAPI — 1 operation(s) for validate.
-  humanURL: https://www.asyncapi.com/docs
+  humanURL: https://api.asyncapi.com/v1/docs
+  baseURL: https://api.asyncapi.com/v1
   tags:
   - Validate
   properties:
   - type: OpenAPI
     url: openapi/asyncapi-validate-api-openapi.yml
 common:
+  - type: Website
+    url: https://www.asyncapi.com/
   - type: AgenticAccess
     url: agentic-access/asyncapi-agentic-access.yml
   - type: DomainSecurity
@@ -204,6 +256,86 @@ common:
         description: >-
           AsyncAPI CLI integrates into continuous integration pipelines for
           automated validation and linting of AsyncAPI specification files.
+  - type: Packages
+    url: packages/asyncapi-packages.yml
+    title: First-party packages and SDKs
+  - type: SDKs
+    url: packages/asyncapi-packages.yml
+    title: AsyncAPI client libraries and tooling packages
+  - type: CLI
+    url: cli/asyncapi-cli.yml
+    title: AsyncAPI CLI command surface
+  - type: Components
+    url: components/asyncapi-components.yml
+    title: Embeddable AsyncAPI document renderers
+  - type: Authentication
+    url: authentication/asyncapi-authentication.yml
+    title: Authentication profile (keyless public API)
+  - type: Conventions
+    url: conventions/asyncapi-conventions.yml
+    title: API conventions and runtime semantics
+  - type: ErrorCatalog
+    url: errors/asyncapi-problem-types.yml
+    title: Problem-details error catalog
+  - type: Lifecycle
+    url: lifecycle/asyncapi-lifecycle.yml
+    title: Versioning and lifecycle
+  - type: ChangeLog
+    url: changelog/asyncapi-changelog.yml
+    title: Specification and CLI release history
+  - type: Conformance
+    url: conformance/asyncapi-conformance.yml
+    title: Standards conformance
+  - type: DataModel
+    url: data-model/asyncapi-data-model.yml
+    title: Server API data model
+  - type: Plans
+    url: plans/asyncapi-plans-pricing.yml
+    title: Plans and pricing (none — open source, no commercial tiers)
+  - type: RateLimits
+    url: rate-limits/asyncapi-rate-limits.yml
+    title: Rate limits (none published)
+  - type: Sandbox
+    url: sandbox/asyncapi-sandbox.yml
+    title: AsyncAPI Studio and self-hosted API
+  - type: Console
+    url: https://studio.asyncapi.com
+    title: AsyncAPI Studio
+  - type: Overlay
+    url: overlays/asyncapi-server-api-overlay.yaml
+    title: API Evangelist enhancements overlay
+  - type: LLMsTxt
+    url: llms/asyncapi-llms.txt
+    title: llms.txt
+  - type: AgentSkill
+    url: skills/_index.yml
+    title: Packaged agent skills for the AsyncAPI Server API
+  - type: VulnerabilityDisclosure
+    url: security/asyncapi-vulnerability-disclosure.yml
+    title: Coordinated vulnerability disclosure
+  - type: Security
+    url: https://github.com/asyncapi/.github/blob/master/SECURITY.md
+    title: AsyncAPI Security Policy
+  - type: APIReference
+    url: https://api.asyncapi.com/v1/docs
+    title: AsyncAPI Server API reference
+  - type: GettingStarted
+    url: https://www.asyncapi.com/docs/tutorials/getting-started
+    title: Getting Started
+  - type: Support
+    url: https://www.asyncapi.com/community
+    title: Community
+  - type: TermsOfService
+    url: https://lfprojects.org/policies/terms-of-use/
+    title: LF Projects Terms of Use
+  - type: PrivacyPolicy
+    url: https://lfprojects.org/policies/privacy-policy/
+    title: LF Projects Privacy Policy
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-06'
+  status: enriched
+  artifacts_added: 31
+  pass: local-v3

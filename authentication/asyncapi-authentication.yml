@@ -1,0 +1,35 @@
+generated: '2026-09-06'
+method: probed
+source: openapi/asyncapi-server-api-openapi.yml + live anonymous calls to https://api.asyncapi.com/v1
+docs: https://api.asyncapi.com/v1/docs
+note: >-
+  The AsyncAPI Server API declares no `components.securitySchemes` and no
+  `security` requirement on any of its eight operations, and an anonymous
+  POST https://api.asyncapi.com/v1/validate returned HTTP 200 with a full
+  ValidateResponse body on 2026-09-06 with no key, token or cookie. This is
+  a deliberately keyless public service operated by the AsyncAPI Initiative,
+  not an undocumented gap — the authentication model IS "none", and that is
+  what an agent needs to know.
+summary:
+  types: []
+  model: none
+  api_key_in: []
+  oauth2_flows: []
+  anonymous_access: true
+  registration_required: false
+schemes: []
+verification:
+  - request: POST https://api.asyncapi.com/v1/validate
+    credentials: none
+    http_status: 200
+    observed: '2026-09-06'
+  - request: GET https://api.asyncapi.com/v1/help
+    credentials: none
+    http_status: 200
+    observed: '2026-09-06'
+related:
+  - >-
+    The AsyncAPI CLI has its own auth surface for FETCHING protected documents,
+    not for calling this API: `asyncapi config auth add PATTERN TOKEN` stores an
+    HTTP Authorization header to use when the CLI resolves a spec URL behind a
+    gate. Documented at https://www.asyncapi.com/docs/tools/cli/usage

@@ -1,0 +1,53 @@
+generated: '2026-09-06'
+method: derived
+status: candidate
+source: openapi/asyncapi-server-api-openapi.yml
+note: >-
+  NO MCP SERVER EXISTS. Searched the asyncapi GitHub organization (no `mcp` or
+  `mcp-server` repository — both 404), the npm @asyncapi scope, and the web.
+  Nothing is published, hosted or announced as of 2026-09-06. The tools below are
+  a DERIVED CANDIDATE mapped one-to-one onto the real operationIds of the live
+  OpenAPI; no endpoint URL is asserted because none exists.
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: none
+  verified: derived
+server:
+  name: asyncapi
+  transport: null
+  url: null
+tools:
+  - name: validate_asyncapi_document
+    description: Validate an AsyncAPI document and return diagnostics and a quality score.
+    source_operation: openapi/asyncapi-server-api-openapi.yml#validate
+  - name: parse_asyncapi_document
+    description: Parse an AsyncAPI document into its resolved, parsed form.
+    source_operation: openapi/asyncapi-server-api-openapi.yml#parse
+  - name: convert_document
+    description: Convert an AsyncAPI document to a newer spec version, or an OpenAPI 3.0 document to AsyncAPI.
+    source_operation: openapi/asyncapi-server-api-openapi.yml#convert
+  - name: generate_from_template
+    description: Generate code or documentation from an AsyncAPI document using a generator template.
+    source_operation: openapi/asyncapi-server-api-openapi.yml#generate
+  - name: bundle_asyncapi_documents
+    description: Bundle multiple AsyncAPI documents and their references into one document.
+    source_operation: openapi/asyncapi-server-api-openapi.yml#bundle
+  - name: diff_asyncapi_documents
+    description: Report the differences between two AsyncAPI documents.
+    source_operation: openapi/asyncapi-server-api-openapi.yml#diff
+  - name: list_commands
+    description: List the commands the AsyncAPI Server API exposes.
+    source_operation: openapi/asyncapi-server-api-openapi.yml#help
+  - name: get_service_version
+    description: Report the running AsyncAPI CLI version, runtime and API health.
+    source_operation: openapi/asyncapi-server-api-openapi.yml#getVersion
+probes:
+  - url: https://github.com/asyncapi/mcp
+    http_status: 404
+    checked: '2026-09-06'
+  - url: https://github.com/asyncapi/mcp-server
+    http_status: 404
+    checked: '2026-09-06'
