@@ -77,37 +77,6 @@ apis:
     url: https://www.asyncapi.com/docs/tutorials/getting-started
   - type: AsyncAPI
     url: https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md
-- aid: asyncapi:asyncapi-server-api
-  name: AsyncAPI Server API
-  description: >-
-    The AsyncAPI Server API is the only callable HTTP API the AsyncAPI Initiative
-    operates. It exposes the official AsyncAPI toolchain — validate, parse,
-    convert, generate, bundle and diff — over HTTP at https://api.asyncapi.com/v1,
-    free, keyless and without signup. It is stateless: every operation takes an
-    AsyncAPI (or OpenAPI 3.0) document in the request body and returns a derived
-    document, diagnostics or service metadata. The same service is self-hostable
-    via Docker or `asyncapi start api`.
-  humanURL: https://api.asyncapi.com/v1/docs
-  baseURL: https://api.asyncapi.com/v1
-  tags:
-  - Event-Driven
-  - Specification
-  - Tooling
-  - Validation
-  - Code Generation
-  properties:
-  - type: OpenAPI
-    url: openapi/asyncapi-server-api-openapi.yml
-  - type: APIReference
-    url: https://api.asyncapi.com/v1/docs
-  - type: Overlay
-    url: overlays/asyncapi-server-api-overlay.yaml
-  - type: ErrorCatalog
-    url: errors/asyncapi-problem-types.yml
-  - type: DataModel
-    url: data-model/asyncapi-data-model.yml
-  - type: SourceCode
-    url: https://github.com/asyncapi/cli/tree/master/src/apps/api
 - aid: asyncapi:asyncapi-bundle-api
   name: AsyncAPI Bundle API
   description: The Bundle API from AsyncAPI — 1 operation(s) for bundle.
@@ -178,6 +147,24 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/asyncapi-validate-api-openapi.yml
+- aid: asyncapi:asyncapi-version-api
+  name: AsyncAPI Version API
+  description: The version API from AsyncAPI — 1 operation(s) for version.
+  humanURL: https://www.asyncapi.com/docs
+  baseURL: https://api.asyncapi.com/v1
+  tags:
+  - version
+  properties:
+  - type: OpenAPI
+    url: openapi/asyncapi-version-api-openapi.yml
+  - type: APIReference
+    url: https://api.asyncapi.com/v1/docs
+  - type: ErrorCatalog
+    url: errors/asyncapi-problem-types.yml
+  - type: DataModel
+    url: data-model/asyncapi-data-model.yml
+  - type: SourceCode
+    url: https://github.com/asyncapi/cli/tree/master/src/apps/api
 common:
   - type: Website
     url: https://www.asyncapi.com/
