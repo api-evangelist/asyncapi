@@ -153,6 +153,8 @@ apis:
   humanURL: https://www.asyncapi.com/docs
   baseURL: https://api.asyncapi.com/v1
   tags:
+  - Version
+  tags_raw:
   - version
   properties:
   - type: OpenAPI
