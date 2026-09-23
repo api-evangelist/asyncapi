@@ -1,13 +1,8 @@
 {
   "provider": "asyncapi",
   "sources": [
-    "asyncapi-bundle-api-openapi.yml",
-    "asyncapi-convert-api-openapi.yml",
-    "asyncapi-diff-api-openapi.yml",
-    "asyncapi-generate-api-openapi.yml",
-    "asyncapi-help-api-openapi.yml",
-    "asyncapi-parse-api-openapi.yml",
-    "asyncapi-validate-api-openapi.yml"
+    "_original/asyncapi-openapi.yml",
+    "asyncapi-version-api-openapi.yml"
   ],
   "outputs": [
     "asyncapi-bundle-api-openapi.yml",
@@ -16,20 +11,26 @@
     "asyncapi-generate-api-openapi.yml",
     "asyncapi-help-api-openapi.yml",
     "asyncapi-parse-api-openapi.yml",
-    "asyncapi-validate-api-openapi.yml"
+    "asyncapi-validate-api-openapi.yml",
+    "asyncapi-version-api-openapi.yml"
   ],
   "archived": [],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "asyncapi-version-api-openapi.yml: previously refined output kept for 1 operation(s) no archived document covers (e.g. /version get); its other 0 operation(s) came from the archive and were dropped from it. The archive is incomplete for this provider \u2014 re-harvest to restore _original/ as the full source of truth."
+  ],
   "notes": [
-    "asyncapi-bundle-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "asyncapi-convert-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "asyncapi-diff-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "asyncapi-generate-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "asyncapi-help-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "asyncapi-parse-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "asyncapi-validate-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "asyncapi-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "asyncapi-bundle-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "asyncapi-convert-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "asyncapi-diff-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "asyncapi-generate-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "asyncapi-help-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "asyncapi-parse-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "asyncapi-validate-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

@@ -15,9 +15,7 @@ info:
 
     standard, not an API. This document covers the companion AsyncAPI Server
 
-    API which provides the runtime HTTP surface.
-
-    '
+    API which provides the runtime HTTP surface.'
   contact:
     name: AsyncAPI Initiative
     url: https://www.asyncapi.com
@@ -71,6 +69,8 @@ paths:
                     - type: string
         '422':
           $ref: '#/components/responses/Problem'
+      operationId: postBundle
+      x-operation-id-source: derived
 components:
   schemas:
     Problem:

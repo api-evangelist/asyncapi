@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: AsyncAPI Server Bundle Parse API
+  title: AsyncAPI Server Parse API
   version: '1.0'
   description: 'The AsyncAPI Server API exposes the official AsyncAPI tooling
 
@@ -15,9 +15,7 @@ info:
 
     standard, not an API. This document covers the companion AsyncAPI Server
 
-    API which provides the runtime HTTP surface.
-
-    '
+    API which provides the runtime HTTP surface.'
   contact:
     name: AsyncAPI Initiative
     url: https://www.asyncapi.com
@@ -62,6 +60,8 @@ paths:
                     type: string
         '422':
           $ref: '#/components/responses/Problem'
+      operationId: postParse
+      x-operation-id-source: derived
 components:
   schemas:
     Problem:
