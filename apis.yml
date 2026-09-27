@@ -10,23 +10,21 @@ description: >-
   asynchronous messaging interfaces, similar to how OpenAPI serves REST APIs.
 type: Index
 deliveryModel:
-  model: open-source
-  open_source: true
-  commercial: false
+  model: saas
+  license_evidence:
+    not_product:
+    - asyncapi/cli
+  open_source: unknown
+  commercial: true
   callable_host: true
-  label: Open source (Apache-2.0) with a free hosted API
-  confidence: high
+  label: Hosted service · you call their endpoint
+  confidence: low
   source:
   - openapi
-  - packages
-  - plans
-  note: >-
-    The specification and every first-party tool are Apache-2.0 under the Linux
-    Foundation, and the AsyncAPI Server API is callable at
-    https://api.asyncapi.com/v1 — verified by an anonymous HTTP 200 on 2026-09-06.
-    There is no commercial offering of any kind.
-  generated: '2026-09-06'
-  method: probed
+  - pricing
+  - repository-not-product
+  generated: '2026-09-25'
+  method: derived
 accessModel:
   pricing: free
   onboarding: none
