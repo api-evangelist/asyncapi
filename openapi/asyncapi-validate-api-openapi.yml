@@ -59,6 +59,13 @@ paths:
       operationId: postValidate
       x-operation-id-source: derived
 components:
+  responses:
+    Problem:
+      description: RFC 7807 problem response
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
   schemas:
     Problem:
       type: object
@@ -74,10 +81,3 @@ components:
           type: string
         instance:
           type: string
-  responses:
-    Problem:
-      description: RFC 7807 problem response
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/Problem'
