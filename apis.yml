@@ -166,6 +166,8 @@ apis:
   - type: SourceCode
     url: https://github.com/asyncapi/cli/tree/master/src/apps/api
 common:
+  - type: FinOps
+    url: finops/asyncapi-finops.yml
   - type: Website
     url: https://www.asyncapi.com/
   - type: AgenticAccess
