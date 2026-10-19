@@ -1,0 +1,12 @@
+{
+ "url": "https://api.asyncapi.com/v1/docs/openapi.yaml",
+ "final": "https://api.asyncapi.com/v1/docs/openapi.yaml",
+ "status": 200,
+ "content_type": "text/yaml; charset=utf-8",
+ "bytes": 21944,
+ "sha256": "dc97989402b52251ee0af4020e2571a7e17dd5de6cc94adcdabeebcc19b64f2b",
+ "fetched_at": "2026-10-19",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "byte-identical",
+ "note": "re-archived: the provider's current document replaced a stale archive (roadmap#793); the old files are in openapi/_superseded/2026-10-19-stale"
+}
