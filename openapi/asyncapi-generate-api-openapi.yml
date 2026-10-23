@@ -159,3 +159,9 @@ components:
       - $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.6.0.json
       - $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/3.0.0.json
       - $ref: https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/3.1.0.json
+x-provenance:
+  method: harvested
+  publisher: AsyncAPI
+  source: https://api.asyncapi.com/v1/docs/openapi.yaml
+  note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
+    stamped by stamp-openapi-provenance.py (roadmap#793)
